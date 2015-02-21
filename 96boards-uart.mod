@@ -1,0 +1,381 @@
+PCBNEW-LibModule-V1  Sat 21 Feb 2015 16:16:57 GMT
+# encoding utf-8
+Units mm
+$INDEX
+PIN_ARRAY_2MM_20X2
+SIL2MM-8
+$EndINDEX
+$MODULE PIN_ARRAY_2MM_20X2
+Po 0 0 0 15 54E8AF73 00000000 ~~
+Li PIN_ARRAY_2MM_20X2
+Cd Double rangee de contacts 2 x 12 pins
+Kw CONN
+Sc 0
+AR /54E6538C
+Op 0 0 0
+T0 0 -3.81 1.016 1.016 0 0.27432 N V 21 N "P1"
+T1 0 3.81 1.016 1.016 0 0.2032 N V 21 N "CONN_20X2"
+DS 21.5 3.25 -21.5 3.25 0.3048 21
+DS -21.5 -3.25 21.5 -3.25 0.3048 21
+DS 21.5 -3.25 21.5 3.25 0.3048 21
+DS -21.5 -3.25 -21.5 3.25 0.3048 21
+$PAD
+Sh "1" R 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -19 1
+$EndPAD
+$PAD
+Sh "2" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -19 -1
+$EndPAD
+$PAD
+Sh "11" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -9 1
+$EndPAD
+$PAD
+Sh "4" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -17 -1
+$EndPAD
+$PAD
+Sh "13" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7 1
+$EndPAD
+$PAD
+Sh "6" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -15 -1
+$EndPAD
+$PAD
+Sh "15" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5 1
+$EndPAD
+$PAD
+Sh "8" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -13 -1
+$EndPAD
+$PAD
+Sh "17" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3 1
+$EndPAD
+$PAD
+Sh "10" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -1
+$EndPAD
+$PAD
+Sh "19" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1 1
+$EndPAD
+$PAD
+Sh "12" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -9 -1
+$EndPAD
+$PAD
+Sh "21" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1 1
+$EndPAD
+$PAD
+Sh "14" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7 -1
+$EndPAD
+$PAD
+Sh "23" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3 1
+$EndPAD
+$PAD
+Sh "16" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5 -1
+$EndPAD
+$PAD
+Sh "25" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5 1
+$EndPAD
+$PAD
+Sh "18" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3 -1
+$EndPAD
+$PAD
+Sh "27" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7 1
+$EndPAD
+$PAD
+Sh "20" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1 -1
+$EndPAD
+$PAD
+Sh "29" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 9 1
+$EndPAD
+$PAD
+Sh "22" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1 -1
+$EndPAD
+$PAD
+Sh "31" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 11 1
+$EndPAD
+$PAD
+Sh "24" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3 -1
+$EndPAD
+$PAD
+Sh "26" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5 -1
+$EndPAD
+$PAD
+Sh "33" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 13 1
+$EndPAD
+$PAD
+Sh "28" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7 -1
+$EndPAD
+$PAD
+Sh "32" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 11 -1
+$EndPAD
+$PAD
+Sh "34" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 13 -1
+$EndPAD
+$PAD
+Sh "36" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 15 -1
+$EndPAD
+$PAD
+Sh "38" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 17 -1
+$EndPAD
+$PAD
+Sh "35" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 15 1
+$EndPAD
+$PAD
+Sh "37" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 17 1
+$EndPAD
+$PAD
+Sh "3" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -17 1
+$EndPAD
+$PAD
+Sh "5" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -15 1
+$EndPAD
+$PAD
+Sh "7" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -13 1
+$EndPAD
+$PAD
+Sh "9" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 1
+$EndPAD
+$PAD
+Sh "39" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 19 1
+$EndPAD
+$PAD
+Sh "40" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 19 -1
+$EndPAD
+$PAD
+Sh "30" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 9 -1
+$EndPAD
+$SHAPE3D
+Na "pin_array/pins_array_20x2.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE PIN_ARRAY_2MM_20X2
+$MODULE SIL2MM-8
+Po 0 0 0 15 54E83160 00000000 ~~
+Li SIL2MM-8
+Cd Connecteur 8 pins
+Kw CONN DEV
+Sc 0
+AR /54E653AA
+Op 0 0 0
+T0 -5.08 -2.54 1.72974 1.08712 0 0.27178 N V 21 N "P3"
+T1 5.08 -2.54 1.524 1.016 0 0.3048 N V 21 N "CONN_8"
+DS -8 -1 8 -1 0.3048 21
+DS 8 -1 8 1 0.3048 21
+DS 8 1 -8 1 0.3048 21
+DS -8 1 -8 -1 0.3048 21
+DS -6 1 -6 -1 0.3048 21
+$PAD
+Sh "1" R 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7 0
+$EndPAD
+$PAD
+Sh "2" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5 0
+$EndPAD
+$PAD
+Sh "3" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3 0
+$EndPAD
+$PAD
+Sh "4" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 2 "N-000003"
+Po -1 0
+$EndPAD
+$PAD
+Sh "5" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 3 "N-000005"
+Po 1 0
+$EndPAD
+$PAD
+Sh "6" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 4 "VCC"
+Po 3 0
+$EndPAD
+$PAD
+Sh "7" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5 0
+$EndPAD
+$PAD
+Sh "8" C 1.2 1.2 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 1 "GND"
+Po 7 0
+$EndPAD
+$EndMODULE SIL2MM-8
+$EndLIBRARY
