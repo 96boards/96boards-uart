@@ -1,6 +1,6 @@
-update=Fri 20 Feb 2015 22:07:20 PST
+update=Mon 23 Feb 2015 14:54:49 GMT
 version=1
-last_client=pcbnew
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
