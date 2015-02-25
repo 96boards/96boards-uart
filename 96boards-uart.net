@@ -1,47 +1,15 @@
-# EESchema Netlist Version 1.1 created  Sat 21 Feb 2015 17:38:28 GMT
+# EESchema Netlist Version 1.1 created  Tue 24 Feb 2015 15:48:28 GMT
 (
- ( /54E6539B $noname  P2 CONN_6 {Lib=CONN_6}
-  (    1 GND )
-  (    2 ? )
-  (    3 VCC )
-  (    4 /UART0_RXD_HV )
-  (    5 /UART0_TXD_HV )
-  (    6 ? )
- )
- ( /54E7D31F $noname  R1 R {Lib=R}
-  (    1 +1.8V )
-  (    2 /UART0_RXD_LV )
- )
- ( /54E7D3D1 $noname  R3 R {Lib=R}
-  (    1 VCC )
-  (    2 /UART0_RXD_HV )
- )
- ( /54E7D852 $noname  R2 R {Lib=R}
-  (    1 +1.8V )
-  (    2 /UART0_TXD_LV )
- )
- ( /54E7D85A $noname  R4 R {Lib=R}
-  (    1 VCC )
-  (    2 /UART0_TXD_HV )
- )
- ( /54E7E6E1 SOT-26  Q1 DMN601DMK {Lib=DMN601DMK}
-  (    1 /UART0_RXD_LV )
-  (    2 +1.8V )
-  (    3 /UART0_TXD_HV )
-  (    4 /UART0_TXD_LV )
-  (    5 +1.8V )
-  (    6 /UART0_RXD_HV )
- )
  ( /54E6538C $noname  P1 CONN_20X2 {Lib=CONN_20X2}
   (    1 GND )
   (    2 GND )
-  (    3 ? )
-  (    4 ? )
+  (    3 /UART0_CTS_LV )
+  (    4 /PWR_BTN )
   (    5 /UART0_TXD_LV )
-  (    6 ? )
+  (    6 /RST_BTN )
   (    7 /UART0_RXD_LV )
   (    8 ? )
-  (    9 ? )
+  (    9 /UART0_RTS_LV )
   (   10 ? )
   (   11 ? )
   (   12 ? )
@@ -69,77 +37,76 @@
   (   34 ? )
   (   35 +1.8V )
   (   36 ? )
-  (   37 ? )
+  (   37 VCC )
   (   38 ? )
-  (   39 ? )
-  (   40 ? )
+  (   39 GND )
+  (   40 GND )
+ )
+ ( /54EBBD3A $noname  SW1 SW_PUSH {Lib=SW_PUSH}
+  (    1 /PWR_BTN )
+  (    2 GND )
+ )
+ ( /54EBBD47 $noname  SW2 SW_PUSH {Lib=SW_PUSH}
+  (    1 /RST_BTN )
+  (    2 GND )
+ )
+ ( /54EC9AA7 $noname  J5 CONN_5 {Lib=CONN_5}
+  (    1 +1.8V )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+ )
+ ( /54EC9AB4 $noname  J2 CONN_5 {Lib=CONN_5}
+  (    1 GND )
+  (    2 /UART0_RXD_LV )
+  (    3 /UART0_TXD_LV )
+  (    4 /UART0_CTS_LV )
+  (    5 /UART0_RTS_LV )
+ )
+ ( /54EC9ACC $noname  J6 CONN_3 {Lib=CONN_3}
+  (    1 /PWR_BTN )
+  (    2 /RST_BTN )
+  (    3 ? )
+ )
+ ( /54EC9AD9 $noname  J3 CONN_3 {Lib=CONN_3}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
  )
 )
 *
-{ Allowed footprints by component:
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R4
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component Q1
- SOT-26*
-$endlist
-$endfootprintlist
-}
 { Pin List by Nets
-Net 14 "/UART0_TXD_LV" "UART0_TXD_LV"
- R2 2
- Q1 4
- P1 5
-Net 16 "/UART0_TXD_HV" "UART0_TXD_HV"
- Q1 3
- R4 2
- P2 5
-Net 17 "GND" "GND"
- P2 1
- P1 2
+Net 6 "GND" "GND"
+ P1 40
  P1 1
-Net 29 "+1.8V" "+1.8V"
- R1 1
- R2 1
- Q1 5
- Q1 2
+ P1 2
+ P1 39
+ J2 1
+ SW1 2
+ SW2 2
+Net 7 "+1.8V" "+1.8V"
  P1 35
-Net 40 "VCC" "VCC"
- R3 1
- R4 1
- P2 3
-Net 43 "/UART0_RXD_HV" "UART0_RXD_HV"
- R3 2
- Q1 6
- P2 4
-Net 44 "/UART0_RXD_LV" "UART0_RXD_LV"
- R1 2
+ J5 1
+Net 28 "/UART0_TXD_LV" "UART0_TXD_LV"
+ J2 3
+ P1 5
+Net 29 "/UART0_RXD_LV" "UART0_RXD_LV"
+ J2 2
  P1 7
- Q1 1
+Net 31 "/UART0_CTS_LV" "UART0_CTS_LV"
+ P1 3
+ J2 4
+Net 32 "/RST_BTN" "RST_BTN"
+ J6 2
+ SW2 1
+ P1 6
+Net 34 "/UART0_RTS_LV" "UART0_RTS_LV"
+ P1 9
+ J2 5
+Net 35 "/PWR_BTN" "PWR_BTN"
+ P1 4
+ SW1 1
+ J6 1
 }
 #End

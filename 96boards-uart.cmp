@@ -1,4 +1,32 @@
-Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Fri 20 Feb 2015 22:33:44 PST
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Wed 25 Feb 2015 17:57:44 GMT
+
+BeginCmp
+TimeStamp = /54EC9AB4;
+Reference = J2;
+ValeurCmp = CONN_5;
+IdModule  = SIL-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EC9AD9;
+Reference = J3;
+ValeurCmp = CONN_3;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EC9AA7;
+Reference = J5;
+ValeurCmp = CONN_5;
+IdModule  = SIL-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EC9ACC;
+Reference = J6;
+ValeurCmp = CONN_3;
+IdModule  = SIL-3;
+EndCmp
 
 BeginCmp
 TimeStamp = /54E6538C;
@@ -8,52 +36,17 @@ IdModule  = PIN_ARRAY_2MM_20X2;
 EndCmp
 
 BeginCmp
-TimeStamp = /54E6539B;
-Reference = P2;
-ValeurCmp = CONN_6;
-IdModule  = SIL-6;
+TimeStamp = /54EBBD3A;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = SW_PUSH_SM;
 EndCmp
 
 BeginCmp
-TimeStamp = /54E653AA;
-Reference = P3;
-ValeurCmp = CONN_8;
-IdModule  = SIL2MM-8;
-EndCmp
-
-BeginCmp
-TimeStamp = /54E7E6E1;
-Reference = Q1;
-ValeurCmp = DMN601DMK;
-IdModule  = SOT23_6;
-EndCmp
-
-BeginCmp
-TimeStamp = /54E7D31F;
-Reference = R1;
-ValeurCmp = R;
-IdModule  = SM0402_r;
-EndCmp
-
-BeginCmp
-TimeStamp = /54E7D852;
-Reference = R2;
-ValeurCmp = R;
-IdModule  = SM0402_r;
-EndCmp
-
-BeginCmp
-TimeStamp = /54E7D3D1;
-Reference = R3;
-ValeurCmp = R;
-IdModule  = SM0402_r;
-EndCmp
-
-BeginCmp
-TimeStamp = /54E7D85A;
-Reference = R4;
-ValeurCmp = R;
-IdModule  = SM0402_r;
+TimeStamp = /54EBBD47;
+Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = SW_PUSH_SM;
 EndCmp
 
 EndListe
