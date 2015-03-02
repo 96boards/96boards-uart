@@ -1,38 +1,31 @@
-Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Wed 25 Feb 2015 17:57:44 GMT
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Mon 02 Mar 2015 22:25:58 GMT
 
 BeginCmp
-TimeStamp = /54EC9AB4;
-Reference = J2;
-ValeurCmp = CONN_5;
-IdModule  = SIL-5;
+TimeStamp = /54F37856;
+Reference = D1;
+ValeurCmp = MMSZ4678T1G;
+IdModule  = SOD-123;
 EndCmp
 
 BeginCmp
-TimeStamp = /54EC9AD9;
-Reference = J3;
-ValeurCmp = CONN_3;
-IdModule  = SIL-3;
-EndCmp
-
-BeginCmp
-TimeStamp = /54EC9AA7;
-Reference = J5;
-ValeurCmp = CONN_5;
-IdModule  = SIL-5;
-EndCmp
-
-BeginCmp
-TimeStamp = /54EC9ACC;
-Reference = J6;
-ValeurCmp = CONN_3;
-IdModule  = SIL-3;
-EndCmp
-
-BeginCmp
-TimeStamp = /54E6538C;
+TimeStamp = /54F0AFFF;
 Reference = P1;
-ValeurCmp = CONN_20X2;
-IdModule  = PIN_ARRAY_2MM_20X2;
+ValeurCmp = 96BOARD_LS_EXPANSION;
+IdModule  = 96BOARDS_LV_EXPANSION;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F0A1F1;
+Reference = P2;
+ValeurCmp = CP2104_MINI;
+IdModule  = CP2104_MINI;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F378F7;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = SM0402_r;
 EndCmp
 
 BeginCmp
