@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Mon 02 Mar 2015 13:19:42 GMT
+# EESchema Netlist Version 1.1 created  Mon 09 Mar 2015 15:58:13 GMT
 (
  ( /54EBBD3A $noname  SW1 SW_PUSH {Lib=SW_PUSH}
   (    1 /PWR_BTN )
@@ -12,7 +12,7 @@
   (    1 VIO )
   (    2 VDD )
   (    3 ? )
-  (    4 +1.8V )
+  (    4 /1_8V_SENSE )
   (    5 N-000006 )
   (    6 /PWR_BTN )
   (    7 /RST_BTN )
@@ -26,7 +26,7 @@
   (   15 ? )
   (   16 ? )
  )
- ( /54F0AFFF PIN_ARRAY_2MM_20X2  P1 96BOARD_LS_EXPANSION {Lib=96BOARD_LS_EXPANSION}
+ ( /54F0AFFF 96BOARD_LS_EXPANSION  P1 96BOARD_LS_EXPANSION {Lib=96BOARD_LS_EXPANSION}
   (    1 GND )
   (    2 GND )
   (    3 /UART0_CTS_LV )
@@ -76,6 +76,10 @@
   (    1 VIO )
   (    2 VDD )
  )
+ ( /54FDBF43 $noname  R2 10K {Lib=R}
+  (    1 +1.8V )
+  (    2 /1_8V_SENSE )
+ )
 )
 *
 { Allowed footprints by component:
@@ -91,48 +95,58 @@ $component R1
  R?-*
  SM1206
 $endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "VDD" "VDD"
  P2 2
  R1 2
-Net 2 "GND" "GND"
- P1 2
- P1 1
- P2 9
- SW2 2
- SW1 2
- P1 39
- D1 1
- P1 40
+Net 2 "/UART0_CTS_LV" "UART0_CTS_LV"
+ P1 3
+ P2 12
 Net 3 "VIO" "VIO"
  D1 2
  R1 1
  P2 1
 Net 4 "+1.8V" "+1.8V"
- P2 4
  P1 35
-Net 5 "/UART0_CTS_LV" "UART0_CTS_LV"
- P1 3
- P2 12
+ R2 1
+Net 5 "/1_8V_SENSE" "1_8V_SENSE"
+ P2 4
+ R2 2
 Net 6 "" ""
  P2 5
  P1 23
-Net 12 "/UART0_TXD_LV" "UART0_TXD_LV"
+Net 7 "GND" "GND"
+ P1 40
+ D1 1
+ P1 2
+ SW2 2
+ SW1 2
+ P1 1
+ P1 39
+ P2 9
+Net 13 "/UART0_TXD_LV" "UART0_TXD_LV"
  P2 11
  P1 5
-Net 13 "/UART0_RXD_LV" "UART0_RXD_LV"
- P1 7
+Net 14 "/UART0_RXD_LV" "UART0_RXD_LV"
  P2 10
-Net 14 "/UART0_RTS_LV" "UART0_RTS_LV"
+ P1 7
+Net 15 "/UART0_RTS_LV" "UART0_RTS_LV"
  P1 9
  P2 13
-Net 15 "/PWR_BTN" "PWR_BTN"
- P2 6
+Net 16 "/PWR_BTN" "PWR_BTN"
  P1 4
  SW1 1
-Net 16 "/RST_BTN" "RST_BTN"
+ P2 6
+Net 17 "/RST_BTN" "RST_BTN"
  P1 6
  SW2 1
  P2 7
