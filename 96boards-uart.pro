@@ -1,6 +1,6 @@
-update=Mon 02 Mar 2015 11:33:29 GMT
+update=Sun 22 Mar 2015 21:08:25 GMT
 version=1
-last_client=eeschema
+last_client=pcbnew
 [cvpcb]
 version=1
 NetIExt=net
@@ -12,10 +12,10 @@ version=1
 version=1
 LastNetListRead=96boards-uart.net
 UseCmpFile=1
-PadDrill=1.016000000000
-PadDrillOvalY=1.016000000000
-PadSizeH=1.524000000000
-PadSizeV=1.524000000000
+PadDrill=0.000000000000
+PadDrillOvalY=0.000000000000
+PadSizeH=0.910000000000
+PadSizeV=1.220000000000
 PcbTextSizeV=1.500000000000
 PcbTextSizeH=1.500000000000
 PcbTextThickness=0.300000000000
@@ -28,7 +28,7 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
-LibDir=
+LibDir=../kicad-gcl
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -46,6 +46,7 @@ LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
 LibName17=96boards-uart
+LibName18=kicad-gcl
 [eeschema]
 version=1
 LibDir=
