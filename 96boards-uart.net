@@ -1,45 +1,27 @@
-# EESchema Netlist Version 1.1 created  Mon 09 Mar 2015 15:58:13 GMT
+# EESchema Netlist Version 1.1 created  Tue 26 May 2015 23:22:13 BST
 (
- ( /54EBBD3A $noname  SW1 SW_PUSH {Lib=SW_PUSH}
+ ( /54EBBD3A $noname  SW1 PWR {Lib=SW_PUSH}
   (    1 /PWR_BTN )
   (    2 GND )
  )
- ( /54EBBD47 $noname  SW2 SW_PUSH {Lib=SW_PUSH}
+ ( /54EBBD47 $noname  SW2 RST {Lib=SW_PUSH}
   (    1 /RST_BTN )
   (    2 GND )
- )
- ( /54F0A1F1 CP2104_MINI  P2 CP2104_MINI {Lib=CP2104_MINI}
-  (    1 VIO )
-  (    2 VDD )
-  (    3 ? )
-  (    4 /1_8V_SENSE )
-  (    5 N-000006 )
-  (    6 /PWR_BTN )
-  (    7 /RST_BTN )
-  (    8 ? )
-  (    9 GND )
-  (   10 /UART0_RXD_LV )
-  (   11 /UART0_TXD_LV )
-  (   12 /UART0_CTS_LV )
-  (   13 /UART0_RTS_LV )
-  (   14 ? )
-  (   15 ? )
-  (   16 ? )
  )
  ( /54F0AFFF 96BOARD_LS_EXPANSION  P1 96BOARD_LS_EXPANSION {Lib=96BOARD_LS_EXPANSION}
   (    1 GND )
   (    2 GND )
-  (    3 /UART0_CTS_LV )
+  (    3 N-000055 )
   (    4 /PWR_BTN )
-  (    5 /UART0_TXD_LV )
+  (    5 N-000002 )
   (    6 /RST_BTN )
-  (    7 /UART0_RXD_LV )
+  (    7 N-000010 )
   (    8 ? )
-  (    9 /UART0_RTS_LV )
+  (    9 N-000014 )
   (   10 ? )
-  (   11 ? )
+  (   11 N-000005 )
   (   12 ? )
-  (   13 ? )
+  (   13 N-000016 )
   (   14 ? )
   (   15 ? )
   (   16 ? )
@@ -49,7 +31,7 @@
   (   20 ? )
   (   21 ? )
   (   22 ? )
-  (   23 N-000006 )
+  (   23 ? )
   (   24 ? )
   (   25 ? )
   (   26 ? )
@@ -61,39 +43,133 @@
   (   32 ? )
   (   33 ? )
   (   34 ? )
-  (   35 +1.8V )
+  (   35 N-000011 )
   (   36 ? )
-  (   37 ? )
+  (   37 N-000008 )
   (   38 ? )
   (   39 GND )
   (   40 GND )
  )
- ( /54F37856 SOD-123  D1 MMSZ4678T1G {Lib=ZENER}
-  (    1 GND )
-  (    2 VIO )
- )
- ( /54F378F7 $noname  R1 10K {Lib=R}
+ ( /54F0A1F1 CP2104_MINI  P2 CP2104_MINI {Lib=CP2104_MINI}
   (    1 VIO )
   (    2 VDD )
+  (    3 ? )
+  (    4 N-000041 )
+  (    5 N-000042 )
+  (    6 ? )
+  (    7 /1_8V_SENSE )
+  (    8 ? )
+  (    9 GND )
+  (   10 /UART_RXD )
+  (   11 /UART_TXD )
+  (   12 /UART_CTS )
+  (   13 /UART_RTS )
+  (   14 ? )
+  (   15 ? )
+  (   16 ? )
  )
- ( /54FDBF43 $noname  R2 10K {Lib=R}
-  (    1 +1.8V )
-  (    2 /1_8V_SENSE )
+ ( /556230AA SOT-23  U1 XC6206P182MR {Lib=LM317AEMP}
+  (    1 GND )
+  (    2 VIO )
+  (    3 VDD )
+ )
+ ( /556231A4 SM0603  C1 10uF {Lib=CSMALL}
+  (    1 VDD )
+  (    2 GND )
+ )
+ ( /556232C3 SM0603  C2 10uF {Lib=CSMALL}
+  (    1 VIO )
+  (    2 GND )
+ )
+ ( /54FDBF43 SM0603  R2 10K {Lib=R}
+  (    1 /1_8V_SENSE )
+  (    2 N-000011 )
+ )
+ ( /55624346 GS3  GS3 SEL_RxD {Lib=GS3}
+  (    1 N-000010 )
+  (    2 /UART_RXD )
+  (    3 N-000016 )
+ )
+ ( /556244B7 GS3  GS4 SEL_TxD {Lib=GS3}
+  (    1 N-000002 )
+  (    2 /UART_TXD )
+  (    3 N-000005 )
+ )
+ ( /556246F1 GS2  GS5 SEL_CTS {Lib=GS2}
+  (    1 N-000055 )
+  (    2 /UART_CTS )
+ )
+ ( /5562E6B2 SM0603  D4 1.8V {Lib=LED}
+  (    1 N-000012 )
+  (    2 GND )
+ )
+ ( /5562F0F6 SM0603  R5 100 {Lib=R}
+  (    1 N-000011 )
+  (    2 N-000012 )
+ )
+ ( /5562F1F1 SM0603  D5 5V {Lib=LED}
+  (    1 N-000009 )
+  (    2 GND )
+ )
+ ( /5562F1FD SM0603  R6 320 {Lib=R}
+  (    1 N-000008 )
+  (    2 N-000009 )
+ )
+ ( /5562F3F7 SM0603  D3 VIO {Lib=LED}
+  (    1 N-000007 )
+  (    2 GND )
+ )
+ ( /5562F403 SM0603  R4 100 {Lib=R}
+  (    1 VIO )
+  (    2 N-000007 )
+ )
+ ( /5562F481 GS2  GS1 RST {Lib=GS2}
+  (    1 /RST_BTN )
+  (    2 N-000042 )
+ )
+ ( /5562F487 GS2  GS2 PWR {Lib=GS2}
+  (    1 /PWR_BTN )
+  (    2 N-000041 )
+ )
+ ( /5562F902 SM0603  D2 PWR/TX {Lib=LED}
+  (    1 N-000044 )
+  (    2 N-000041 )
+ )
+ ( /5562F90E SM0603  R3 100 {Lib=R}
+  (    1 VIO )
+  (    2 N-000044 )
+ )
+ ( /5562F916 SM0603  D1 RST/RX {Lib=LED}
+  (    1 N-000043 )
+  (    2 N-000042 )
+ )
+ ( /5562F922 SM0603  R1 100 {Lib=R}
+  (    1 VIO )
+  (    2 N-000043 )
+ )
+ ( /5562467A GS2  GS6 SEL_RTS {Lib=GS2}
+  (    1 N-000014 )
+  (    2 /UART_RTS )
+ )
+ ( /556339ED SM0603  D6 DIODE {Lib=DIODE}
+  (    1 VDD )
+  (    2 VIO )
  )
 )
 *
 { Allowed footprints by component:
-$component D1
- D?
- SO*
- SM*
+$component U1
+ SOT*
 $endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
 $endlist
 $component R2
  R?
@@ -102,53 +178,190 @@ $component R2
  R?-*
  SM1206
 $endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D5
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D6
+ D?
+ S*
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "VDD" "VDD"
- P2 2
- R1 2
-Net 2 "/UART0_CTS_LV" "UART0_CTS_LV"
- P1 3
+Net 1 "/UART_CTS" "UART_CTS"
  P2 12
-Net 3 "VIO" "VIO"
- D1 2
+ GS5 2
+Net 2 "" ""
+ GS4 1
+ P1 5
+Net 3 "/UART_RTS" "UART_RTS"
+ GS6 2
+ P2 13
+Net 4 "/UART_RXD" "UART_RXD"
+ P2 10
+ GS3 2
+Net 5 "" ""
+ P1 11
+ GS4 3
+Net 6 "VIO" "VIO"
+ C2 1
+ D6 2
+ R4 1
  R1 1
+ R3 1
+ U1 2
  P2 1
-Net 4 "+1.8V" "+1.8V"
+Net 7 "" ""
+ D3 1
+ R4 2
+Net 8 "" ""
+ R6 1
+ P1 37
+Net 9 "" ""
+ R6 2
+ D5 1
+Net 10 "" ""
+ P1 7
+ GS3 1
+Net 11 "" ""
+ R5 1
  P1 35
- R2 1
-Net 5 "/1_8V_SENSE" "1_8V_SENSE"
- P2 4
  R2 2
-Net 6 "" ""
- P2 5
- P1 23
-Net 7 "GND" "GND"
- P1 40
- D1 1
- P1 2
- SW2 2
+Net 12 "" ""
+ D4 1
+ R5 2
+Net 13 "/1_8V_SENSE" "1_8V_SENSE"
+ P2 7
+ R2 1
+Net 14 "" ""
+ P1 9
+ GS6 1
+Net 15 "VDD" "VDD"
+ P2 2
+ D6 1
+ U1 3
+ C1 1
+Net 16 "" ""
+ GS3 3
+ P1 13
+Net 35 "/UART_TXD" "UART_TXD"
+ P2 11
+ GS4 2
+Net 37 "GND" "GND"
  SW1 2
+ SW2 2
  P1 1
+ P1 2
+ D5 2
+ D3 2
+ D4 2
+ P1 40
+ C2 2
+ C1 2
+ U1 1
  P1 39
  P2 9
-Net 13 "/UART0_TXD_LV" "UART0_TXD_LV"
- P2 11
- P1 5
-Net 14 "/UART0_RXD_LV" "UART0_RXD_LV"
- P2 10
- P1 7
-Net 15 "/UART0_RTS_LV" "UART0_RTS_LV"
- P1 9
- P2 13
-Net 16 "/PWR_BTN" "PWR_BTN"
- P1 4
- SW1 1
- P2 6
-Net 17 "/RST_BTN" "RST_BTN"
- P1 6
+Net 41 "" ""
+ D2 2
+ P2 4
+ GS2 2
+Net 42 "" ""
+ P2 5
+ GS1 2
+ D1 2
+Net 43 "" ""
+ D1 1
+ R1 2
+Net 44 "" ""
+ D2 1
+ R3 2
+Net 55 "" ""
+ GS5 1
+ P1 3
+Net 56 "/RST_BTN" "RST_BTN"
  SW2 1
- P2 7
+ P1 6
+ GS1 1
+Net 57 "/PWR_BTN" "PWR_BTN"
+ SW1 1
+ GS2 1
+ P1 4
 }
 #End
