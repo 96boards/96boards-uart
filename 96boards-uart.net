@@ -1,7 +1,7 @@
-# EESchema Netlist Version 1.1 created  Thu 28 May 2015 16:35:53 BST
+# EESchema Netlist Version 1.1 created  Sun 31 May 2015 08:29:53 BST
 (
  ( /54EBBD3A $noname  SW1 PWR {Lib=SW_PUSH}
-  (    1 /PWR_BTN )
+  (    1 N-000005 )
   (    2 GND )
  )
  ( /54EBBD47 $noname  SW2 RST {Lib=SW_PUSH}
@@ -11,17 +11,17 @@
  ( /54F0AFFF 96BOARD_LS_EXPANSION  P1 96BOARD_LS_EXPANSION {Lib=96BOARD_LS_EXPANSION}
   (    1 GND )
   (    2 GND )
-  (    3 N-000010 )
-  (    4 /PWR_BTN )
-  (    5 N-000013 )
+  (    3 N-000007 )
+  (    4 N-000005 )
+  (    5 N-000011 )
   (    6 N-000026 )
-  (    7 N-000017 )
+  (    7 N-000015 )
   (    8 ? )
-  (    9 N-000005 )
+  (    9 N-000004 )
   (   10 ? )
-  (   11 N-000016 )
+  (   11 N-000010 )
   (   12 ? )
-  (   13 N-000018 )
+  (   13 N-000016 )
   (   14 ? )
   (   15 ? )
   (   16 ? )
@@ -43,19 +43,19 @@
   (   32 ? )
   (   33 ? )
   (   34 ? )
-  (   35 +1.8_SENSE )
+  (   35 N-000023 )
   (   36 ? )
-  (   37 N-000007 )
+  (   37 ? )
   (   38 ? )
   (   39 GND )
   (   40 GND )
  )
- ( /556230AA SOT-23  U1 XC6206P182MR {Lib=LM317AEMP}
+ ( /556230AA SOT23  U1 XC6206P182MR {Lib=LM317AEMP}
   (    1 GND )
   (    2 +1.8V )
   (    3 +3.3V )
  )
- ( /556231A4 SM0603  C1 10uF {Lib=CSMALL}
+ ( /556231A4 SM0603_Capa  C1 10uF {Lib=CSMALL}
   (    1 +3.3V )
   (    2 GND )
  )
@@ -63,35 +63,27 @@
   (    1 +1.8V )
   (    2 GND )
  )
- ( /55624346 GS3  GS3 SEL_RxD {Lib=GS3}
-  (    1 N-000017 )
-  (    2 /RXD )
-  (    3 N-000018 )
- )
- ( /556244B7 GS3  GS4 SEL_TxD {Lib=GS3}
-  (    1 N-000013 )
-  (    2 /TXD )
+ ( /55624346 GS3  GS1 SEL_RxD {Lib=GS3}
+  (    1 N-000015 )
+  (    2 N-000014 )
   (    3 N-000016 )
  )
- ( /556246F1 GS2  GS5 SEL_CTS {Lib=GS2}
-  (    1 N-000010 )
-  (    2 /CTS )
+ ( /556244B7 GS3  GS2 SEL_TxD {Lib=GS3}
+  (    1 N-000011 )
+  (    2 N-000013 )
+  (    3 N-000010 )
  )
- ( /5562F1F1 SM0603  D5 5V {Lib=LED}
-  (    1 N-000012 )
-  (    2 GND )
- )
- ( /5562F1FD SM0603  R6 320 {Lib=R}
+ ( /556246F1 GS2  GS3 SEL_CTS {Lib=GS2}
   (    1 N-000007 )
   (    2 N-000012 )
  )
- ( /5562467A GS2  GS6 SEL_RTS {Lib=GS2}
-  (    1 N-000005 )
-  (    2 /RTS )
+ ( /5562467A GS2  GS4 SEL_RTS {Lib=GS2}
+  (    1 N-000004 )
+  (    2 N-000003 )
  )
- ( /5565AB07 $noname  CON1 USB-MINI-B {Lib=USB-MINI-B}
+ ( /5565AB07 $noname  CON1 ST-USB-001E {Lib=USB-MINI-B}
   (    1 N-000008 )
-  (    2 N-000001 )
+  (    2 N-000009 )
   (    3 N-000006 )
   (    4 ? )
   (    5 GND )
@@ -100,52 +92,44 @@
   (    8 GND )
   (    9 GND )
  )
- ( /5565BAFA $noname  R9 22 {Lib=R}
-  (    1 N-000001 )
-  (    2 N-000003 )
+ ( /5565BAFA SM0603_Resistor  R6 22 {Lib=R}
+  (    1 N-000009 )
+  (    2 N-000002 )
  )
- ( /5565BF0F $noname  C7 47pF {Lib=CSMALL}
-  (    1 N-000001 )
+ ( /5565BF0F SM0603_Capa  C7 47pF {Lib=CSMALL}
+  (    1 N-000009 )
   (    2 GND )
  )
- ( /5565BEFD $noname  C6 47pF {Lib=CSMALL}
+ ( /5565BEFD SM0603_Capa  C6 47pF {Lib=CSMALL}
   (    1 N-000006 )
   (    2 GND )
  )
- ( /5565C27A $noname  C5 10nF {Lib=CSMALL}
+ ( /5565C27A SM0603_Capa  C5 10nF {Lib=CSMALL}
   (    1 N-000008 )
   (    2 GND )
  )
- ( /5565BB09 $noname  R10 22 {Lib=R}
+ ( /5565BB09 $noname  R7 22 {Lib=R}
   (    1 N-000006 )
-  (    2 N-000002 )
+  (    2 N-000001 )
  )
- ( /5565C7D2 $noname  C4 100nF {Lib=CSMALL}
+ ( /5565C7D2 SM0603_Capa  C4 100nF {Lib=CSMALL}
   (    1 VBUS )
   (    2 GND )
  )
- ( /5565C7D8 $noname  C3 4.7uF {Lib=CSMALL}
+ ( /5565C7D8 SM0603_Capa  C3 4.7uF {Lib=CSMALL}
   (    1 VBUS )
   (    2 GND )
  )
- ( /5565DB88 SM0603  R2 220 {Lib=R}
-  (    1 +3.3V )
-  (    2 N-000025 )
- )
- ( /5565DB8E LED-0603  D7 TX/RX {Lib=LED}
-  (    1 N-000025 )
-  (    2 CBUS1 )
- )
- ( /5565A864 SSOP-16  U2 FT230XS {Lib=FT230XS}
-  (    1 /RXD )
-  (    2 /CTS )
+ ( /5565A864 SSOP16  U2 FT230XS-R {Lib=FT230XS}
+  (    1 N-000014 )
+  (    2 N-000012 )
   (    3 +1.8V )
-  (    4 /TXD )
+  (    4 N-000013 )
   (    5 GND )
-  (    6 /RTS )
+  (    6 N-000003 )
   (    7 CBUS2 )
-  (    8 N-000002 )
-  (    9 N-000003 )
+  (    8 N-000001 )
+  (    9 N-000002 )
   (   10 +3.3V )
   (   11 +3.3V )
   (   12 VBUS )
@@ -154,58 +138,53 @@
   (   15 CBUS0 )
   (   16 CBUS3 )
  )
- ( /55671B7C SM0603_Resistor  R3 100 {Lib=R}
-  (    1 CBUS3 )
-  (    2 /PWR_BTN )
+ ( /55671B7C SM0603_Resistor  R4 100 {Lib=R}
+  (    1 CBUS1 )
+  (    2 N-000005 )
  )
- ( /55671B8B SM0603_Resistor  R4 100 {Lib=R}
+ ( /55671B8B SM0603_Resistor  R5 100 {Lib=R}
   (    1 CBUS0 )
   (    2 N-000026 )
  )
- ( /55670DD9 $noname  R7 10k {Lib=R}
-  (    1 /RTS )
+ ( /55670DD9 SM0603_Resistor  R8 10k {Lib=R}
+  (    1 N-000003 )
   (    2 GND )
  )
- ( /556723CE $noname  FB1 FILTER {Lib=FILTER}
+ ( /556723CE SM0603  FB1 BLM18AG121SN1D {Lib=FILTER}
   (    1 N-000008 )
   (    2 VBUS )
  )
- ( /55672BFC $noname  R1 220 {Lib=R}
-  (    1 +1.8_SENSE )
-  (    2 CBUS2 )
- )
- ( /5562F0F6 SM0603  R5 220 {Lib=R}
+ ( /5562F0F6 SM0603_Resistor  R3 220 {Lib=R}
   (    1 +3.3V )
-  (    2 N-000030 )
+  (    2 N-000029 )
  )
- ( /5562E6B2 LED-0603  D4 1.8V {Lib=LED}
-  (    1 N-000030 )
-  (    2 N-000028 )
+ ( /5562E6B2 LED-0603  D3 TX {Lib=LED}
+  (    1 N-000029 )
+  (    2 CBUS3 )
  )
- ( /55672D62 SOT-23  Q1 S9013 {Lib=NPN}
-  (    1 GND )
-  (    2 CBUS2 )
-  (    3 N-000028 )
- )
- ( /55674229 SM0603_Capacitor  C8 100nF {Lib=CSMALL}
+ ( /55674229 SM0603_Capa  C8 100nF {Lib=CSMALL}
   (    1 +3.3V )
   (    2 GND )
  )
- ( /55674AB4 SM0603  R11 220 {Lib=R}
+ ( /5565DB8E LED-0603  D2 RX {Lib=LED}
+  (    1 N-000019 )
+  (    2 CBUS2 )
+ )
+ ( /5565DB88 SM0603_Resistor  R2 220 {Lib=R}
   (    1 +3.3V )
+  (    2 N-000019 )
+ )
+ ( /556793F6 LED-0603  D1 PWR {Lib=LED}
+  (    1 N-000025 )
+  (    2 GND )
+ )
+ ( /556793FC SM0603_Resistor  R1 220 {Lib=R}
+  (    1 +3.3V )
+  (    2 N-000025 )
+ )
+ ( /55687E94 GS2  GS5 GS2 {Lib=GS2}
+  (    1 +1.8V )
   (    2 N-000023 )
- )
- ( /55674ABA LED-0603  D2 RST {Lib=LED}
-  (    1 N-000023 )
-  (    2 N-000026 )
- )
- ( /55674AC9 SM0603  R8 220 {Lib=R}
-  (    1 +3.3V )
-  (    2 N-000024 )
- )
- ( /55674ACF LED-0603  D1 PWR {Lib=LED}
-  (    1 N-000024 )
-  (    2 /PWR_BTN )
  )
 )
 *
@@ -223,26 +202,10 @@ $component C2
  C?
  C1-1
 $endlist
-$component D5
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component R6
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
 $component CON1
  USB-Mini-B-Jack
 $endlist
-$component R9
+$component R6
  R?
  SM0603
  SM0805
@@ -264,7 +227,7 @@ $component C5
  C?
  C1-1
 $endlist
-$component R10
+$component R7
  R?
  SM0603
  SM0805
@@ -281,44 +244,7 @@ $component C3
  C?
  C1-1
 $endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component D7
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
 $component R4
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R7
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R1
  R?
  SM0603
  SM0805
@@ -332,7 +258,21 @@ $component R5
  R?-*
  SM1206
 $endlist
-$component D4
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
  LED-3MM
  LED-5MM
  LED-10MM
@@ -346,13 +286,6 @@ $component C8
  C?
  C1-1
 $endlist
-$component R11
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
 $component D2
  LED-3MM
  LED-5MM
@@ -362,7 +295,7 @@ $component D2
  LED-1206
  LEDV
 $endlist
-$component R8
+$component R2
  R?
  SM0603
  SM0805
@@ -378,149 +311,140 @@ $component D1
  LED-1206
  LEDV
 $endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "" ""
- R9 1
- C7 1
- CON1 2
-Net 2 "" ""
  U2 8
- R10 2
-Net 3 "" ""
- R9 2
+ R7 2
+Net 2 "" ""
+ R6 2
  U2 9
-Net 4 "/RTS" "RTS"
+Net 3 "" ""
  U2 6
- GS6 2
- R7 1
-Net 5 "" ""
- GS6 1
+ R8 1
+ GS4 2
+Net 4 "" ""
  P1 9
+ GS4 1
+Net 5 "" ""
+ SW1 1
+ P1 4
+ R4 2
 Net 6 "" ""
- R10 1
- C6 1
  CON1 3
+ C6 1
+ R7 1
 Net 7 "" ""
- P1 37
- R6 1
+ GS3 1
+ P1 3
 Net 8 "" ""
  FB1 1
- CON1 1
  C5 1
-Net 9 "+1.8V" "+1.8V"
- U1 2
- U2 3
- C2 1
+ CON1 1
+Net 9 "" ""
+ CON1 2
+ C7 1
+ R6 1
 Net 10 "" ""
- P1 3
- GS5 1
-Net 11 "/RXD" "RXD"
- U2 1
- GS3 2
-Net 12 "" ""
- D5 1
- R6 2
-Net 13 "" ""
- P1 5
- GS4 1
-Net 14 "/CTS" "CTS"
- U2 2
- GS5 2
-Net 15 "/TXD" "TXD"
- GS4 2
- U2 4
-Net 16 "" ""
+ GS2 3
  P1 11
- GS4 3
-Net 17 "" ""
- GS3 1
+Net 11 "" ""
+ GS2 1
+ P1 5
+Net 12 "" ""
+ U2 2
+ GS3 2
+Net 13 "" ""
+ GS2 2
+ U2 4
+Net 14 "" ""
+ GS1 2
+ U2 1
+Net 15 "" ""
+ GS1 1
  P1 7
-Net 18 "" ""
+Net 16 "" ""
+ GS1 3
  P1 13
- GS3 3
-Net 19 "+1.8_SENSE" "+1.8_SENSE"
- P1 35
- R1 1
-Net 20 "GND" "GND"
- Q1 1
- D5 2
- P1 39
+Net 17 "GND" "GND"
  C2 2
  C1 2
- U1 1
- CON1 9
- C3 2
- C4 2
- C5 2
- C6 2
- C7 2
- P1 2
- P1 1
- SW2 2
- SW1 2
- P1 40
- R7 2
- U2 13
- U2 5
- CON1 8
- CON1 7
  CON1 6
+ U1 1
+ P1 39
  CON1 5
- C8 2
-Net 21 "CBUS2" "CBUS2"
- U2 7
- Q1 2
- R1 2
-Net 22 "CBUS1" "CBUS1"
- U2 14
- D7 2
-Net 23 "" ""
- D2 1
- R11 2
-Net 24 "" ""
- D1 1
+ P1 40
+ SW2 2
+ C4 2
+ C3 2
  R8 2
-Net 25 "" ""
- D7 1
+ U2 13
+ SW1 2
+ CON1 7
+ P1 1
+ P1 2
+ C5 2
+ U2 5
+ C6 2
+ CON1 9
+ CON1 8
+ C7 2
+ C8 2
+ D1 2
+Net 18 "CBUS2" "CBUS2"
+ U2 7
+ D2 2
+Net 19 "" ""
  R2 2
+ D2 1
+Net 20 "CBUS1" "CBUS1"
+ R4 1
+ U2 14
+Net 22 "+1.8V" "+1.8V"
+ C2 1
+ GS5 1
+ U2 3
+ U1 2
+Net 23 "" ""
+ P1 35
+ GS5 2
+Net 24 "+3.3V" "+3.3V"
+ C8 1
+ C1 1
+ R1 1
+ U2 11
+ U2 10
+ R3 1
+ U1 3
+ R2 1
+Net 25 "" ""
+ D1 1
+ R1 2
 Net 26 "" ""
- R4 2
+ R5 2
  SW2 1
  P1 6
- D2 2
 Net 27 "VBUS" "VBUS"
  U2 12
  FB1 2
  C3 1
  C4 1
-Net 28 "" ""
- Q1 3
- D4 2
-Net 29 "+3.3V" "+3.3V"
- U2 10
- R2 1
- U2 11
- R5 1
- R8 1
- R11 1
- C1 1
- U1 3
- C8 1
-Net 30 "" ""
- R5 2
- D4 1
-Net 31 "CBUS3" "CBUS3"
- R3 1
+Net 28 "CBUS3" "CBUS3"
  U2 16
-Net 32 "CBUS0" "CBUS0"
- R4 1
- U2 15
-Net 52 "/PWR_BTN" "PWR_BTN"
+ D3 2
+Net 29 "" ""
+ D3 1
  R3 2
- P1 4
- SW1 1
- D1 2
+Net 30 "CBUS0" "CBUS0"
+ R5 1
+ U2 15
 }
 #End

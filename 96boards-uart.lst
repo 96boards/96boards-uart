@@ -1,24 +1,68 @@
-eeschema (22-Jun-2014 BZR 4027)-stable  >> Creation date: Fri 20 Feb 2015 21:40:25 PST
+eeschema (25-Oct-2014 BZR 4029)-stable  >> Creation date: Fri 29 May 2015 09:39:59 BST
 #Cmp ( order = Reference )
-| P1         CONN_20X2   
-| P2         CONN_6      
-| P3         CONN_8      
-| Q1         DMN601DMK   
-| R1         R           
-| R2         R           
-| R3         R           
-| R4         R           
+| C1         10uF        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| C2         10uF        ; SM0603      ;             ;             ;             ;             ;             ;             ;             ;             
+| C3         4.7uF       ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| C4         100nF       ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| C5         10nF        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| C6         47pF        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| C7         47pF        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| C8         100nF       ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| CON1       ST-USB-001E ;             ; 3400150P1   ;             ;             ;             ;             ;             ;             ;             
+| D1         PWR         ; LED-0603    ; Red         ; 0330020P1   ;             ;             ;             ;             ;             ;             
+| D2         RX          ; LED-0603    ; Green       ; 0330010P1   ;             ;             ;             ;             ;             ;             
+| D3         TX          ; LED-0603    ; Yellow      ; 0330050P1   ;             ;             ;             ;             ;             ;             
+| FB1        BLM18AG121SN1D; SM0603      ; 0900120P1   ;             ;             ;             ;             ;             ;             ;             
+| GS1        SEL_RxD     ; GS3         ;             ;             ;             ;             ;             ;             ;             ;             
+| GS2        SEL_TxD     ; GS3         ;             ;             ;             ;             ;             ;             ;             ;             
+| GS3        SEL_CTS     ; GS2         ;             ;             ;             ;             ;             ;             ;             ;             
+| GS4        SEL_RTS     ; GS2         ;             ;             ;             ;             ;             ;             ;             ;             
+| P1         96BOARD_LS_EXPANSION; 96BOARD_LS_EXPANSION; 320020089   ;             ;             ;             ;             ;             ;             ;             
+| R1         220         ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| R2         220         ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| R3         220         ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| R4         100         ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| R5         100         ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| R6         22          ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| R7         22          ; ~           ;             ;             ;             ;             ;             ;             ;             ;             
+| R8         10k         ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| SW1        PWR         ; ~           ; 3110040P1   ;             ;             ;             ;             ;             ;             ;             
+| SW2        RST         ; ~           ; 3110040P1   ;             ;             ;             ;             ;             ;             ;             
+| U1         XC6206P182MR; SOT23       ; 310030016   ;             ;             ;             ;             ;             ;             ;             
+| U2         FT230XS-R   ; SSOP-16     ; 310070030   ;             ;             ;             ;             ;             ;             ;             
 #End Cmp
 
 #Cmp ( order = Value )
-| CONN_20X2    P1        
-| CONN_6       P2        
-| CONN_8       P3        
-| DMN601DMK    Q1        
-| R            R1        
-| R            R2        
-| R            R3        
-| R            R4        
+| 47pF         C6        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| 47pF         C7        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| 10nF         C5        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| 100nF        C4        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| 100nF        C8        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| 4.7uF        C3        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| 10uF         C2        ; SM0603      ;             ;             ;             ;             ;             ;             ;             ;             
+| 10uF         C1        ; SM0603_Capa ;             ;             ;             ;             ;             ;             ;             ;             
+| ST-USB-001E  CON1      ;             ; 3400150P1   ;             ;             ;             ;             ;             ;             ;             
+| PWR          D1        ; LED-0603    ; Red         ; 0330020P1   ;             ;             ;             ;             ;             ;             
+| RX           D2        ; LED-0603    ; Green       ; 0330010P1   ;             ;             ;             ;             ;             ;             
+| TX           D3        ; LED-0603    ; Yellow      ; 0330050P1   ;             ;             ;             ;             ;             ;             
+| BLM18AG121SN1D FB1       ; SM0603      ; 0900120P1   ;             ;             ;             ;             ;             ;             ;             
+| SEL_CTS      GS3       ; GS2         ;             ;             ;             ;             ;             ;             ;             ;             
+| SEL_RTS      GS4       ; GS2         ;             ;             ;             ;             ;             ;             ;             ;             
+| SEL_RxD      GS1       ; GS3         ;             ;             ;             ;             ;             ;             ;             ;             
+| SEL_TxD      GS2       ; GS3         ;             ;             ;             ;             ;             ;             ;             ;             
+| 96BOARD_LS_EXPANSION P1        ; 96BOARD_LS_EXPANSION; 320020089   ;             ;             ;             ;             ;             ;             ;             
+| 22           R6        ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| 22           R7        ; ~           ;             ;             ;             ;             ;             ;             ;             ;             
+| 100          R4        ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| 100          R5        ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| 220          R1        ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| 220          R2        ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| 220          R3        ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| 10k          R8        ; SM0603_Resistor;             ;             ;             ;             ;             ;             ;             ;             
+| PWR          SW1       ; ~           ; 3110040P1   ;             ;             ;             ;             ;             ;             ;             
+| RST          SW2       ; ~           ; 3110040P1   ;             ;             ;             ;             ;             ;             ;             
+| XC6206P182MR U1        ; SOT23       ; 310030016   ;             ;             ;             ;             ;             ;             ;             
+| FT230XS-R    U2        ; SSOP-16     ; 310070030   ;             ;             ;             ;             ;             ;             ;             
 #End Cmp
 
 #End List
