@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (25-Oct-2014 BZR 4029)-stable date = Fri 29 May 2015 22:21:54 BST
+Cmp-Mod V01 Created by CvPcb (25-Oct-2014 BZR 4029)-stable date = Sun 31 May 2015 14:46:10 BST
 
 BeginCmp
 TimeStamp = /556231A4;
@@ -60,7 +60,7 @@ BeginCmp
 TimeStamp = /5565AB07;
 Reference = CON1;
 ValeurCmp = ST-USB-001E;
-IdModule  = USB_MICRO_B;
+IdModule  = USB_MICRO_B_001G;
 EndCmp
 
 BeginCmp
