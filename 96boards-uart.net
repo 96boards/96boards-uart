@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Sun 31 May 2015 08:29:53 BST
+# EESchema Netlist Version 1.1 created  Mon 01 Jun 2015 03:54:10 BST
 (
  ( /54EBBD3A $noname  SW1 PWR {Lib=SW_PUSH}
   (    1 N-000005 )
@@ -81,7 +81,7 @@
   (    1 N-000004 )
   (    2 N-000003 )
  )
- ( /5565AB07 $noname  CON1 ST-USB-001E {Lib=USB-MINI-B}
+ ( /5565AB07 $noname  CON1 ST-USB-001G {Lib=USB-MINI-B}
   (    1 N-000008 )
   (    2 N-000009 )
   (    3 N-000006 )
@@ -96,11 +96,11 @@
   (    1 N-000009 )
   (    2 N-000002 )
  )
- ( /5565BF0F SM0603_Capa  C7 47pF {Lib=CSMALL}
+ ( /5565BF0F SM0603_Capa  C7 39pF {Lib=CSMALL}
   (    1 N-000009 )
   (    2 GND )
  )
- ( /5565BEFD SM0603_Capa  C6 47pF {Lib=CSMALL}
+ ( /5565BEFD SM0603_Capa  C6 39pF {Lib=CSMALL}
   (    1 N-000006 )
   (    2 GND )
  )
