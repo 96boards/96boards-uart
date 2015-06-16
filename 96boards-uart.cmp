@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (25-Oct-2014 BZR 4029)-stable date = Tue 16 Jun 2015 14:28:52 BST
+Cmp-Mod V01 Created by CvPcb (25-Oct-2014 BZR 4029)-stable date = Tue 16 Jun 2015 14:40:30 BST
 
 BeginCmp
 TimeStamp = /556231A4;
@@ -101,8 +101,8 @@ EndCmp
 BeginCmp
 TimeStamp = /54F0AFFF;
 Reference = J1;
-ValeurCmp = 96BOARD_LS_EXPANSION;
-IdModule  = 96BOARD_LS_EXPANSION;
+ValeurCmp = 96BOARDS_LS_EXPANSION;
+IdModule  = 96BOARDS_LS_EXPANSION;
 EndCmp
 
 BeginCmp
