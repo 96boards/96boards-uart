@@ -200,7 +200,7 @@
     )
   )
 
-  (module 96BOARDS_LV_EXPANSION (layer F.Cu) (tedit 556AF4EB) (tstamp 556B028D)
+  (module 96BOARDS_LS_EXPANSION (layer F.Cu) (tedit 556AF4EB) (tstamp 556B028D)
     (at 129 105)
     (descr "Double rangee de contacts 2 x 12 pins")
     (tags CONN)
