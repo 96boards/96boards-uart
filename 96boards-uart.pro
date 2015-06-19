@@ -1,13 +1,11 @@
-update=Tue 26 May 2015 23:41:49 BST
+update=Thu 18 Jun 2015 14:33:46 BST
 version=1
-last_client=pcbnew
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -89,3 +87,5 @@ LibName16=valves
 LibName17=96boards-uart
 LibName18=kicad-gcl
 LibName19=OSHW-logo
+[general]
+version=1
