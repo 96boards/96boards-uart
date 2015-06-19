@@ -1,10 +1,10 @@
-# EESchema Netlist Version 1.1 created  Thu 18 Jun 2015 14:34:16 BST
+# EESchema Netlist Version 1.1 created  Fri 19 Jun 2015 10:21:03 BST
 (
  ( /54EBBD47 $noname  SW1 RST {Lib=SW_PUSH}
   (    1 N-000028 )
   (    2 GND )
  )
- ( /54F0AFFF 96BOARDS_LS_EXPANSION  J2 96BOARDS_LS_EXPANSION {Lib=96BOARD_LS_EXPANSION}
+ ( /54F0AFFF $noname  J2 YXCON_P220-1220A0XMXXXX2 {Lib=96BOARD_LS_EXPANSION}
   (    1 GND )
   (    2 GND )
   (    3 CTS0 )
@@ -55,11 +55,11 @@
   (    1 +3.3V )
   (    2 GND )
  )
- ( /556232C3 SM0603  C2 1uF {Lib=CSMALL}
+ ( /556232C3 SM0603_Capa  C2 1uF {Lib=CSMALL}
   (    1 +1.8V )
   (    2 GND )
  )
- ( /5565AB07 $noname  P1 ST-USB-001G {Lib=USB-MINI-B}
+ ( /5565AB07 USB_MICRO_B  P1 ST-USB-001E {Lib=USB-MINI-B}
   (    1 VBUS )
   (    2 N-000006 )
   (    3 N-000007 )
@@ -70,7 +70,7 @@
   (    8 GND )
   (    9 GND )
  )
- ( /5565BAFA SM0603_Resistor  R9 22 {Lib=R}
+ ( /5565BAFA SM0603_Resistor  R9 22R {Lib=R}
   (    1 N-000006 )
   (    2 N-000024 )
  )
@@ -82,7 +82,7 @@
   (    1 N-000007 )
   (    2 GND )
  )
- ( /5565BB09 $noname  R10 22 {Lib=R}
+ ( /5565BB09 SM0603_Resistor  R10 22R {Lib=R}
   (    1 N-000007 )
   (    2 N-000020 )
  )
@@ -94,11 +94,11 @@
   (    1 VBUS )
   (    2 GND )
  )
- ( /55671B7C SM0603_Resistor  R7 100 {Lib=R}
+ ( /55671B7C SM0603_Resistor  R7 100R {Lib=R}
   (    1 CBUS2 )
   (    2 N-000027 )
  )
- ( /55671B8B SM0603_Resistor  R8 100 {Lib=R}
+ ( /55671B8B SM0603_Resistor  R8 100R {Lib=R}
   (    1 CBUS3 )
   (    2 N-000028 )
  )
@@ -106,7 +106,7 @@
   (    1 RTS0 )
   (    2 GND )
  )
- ( /5562F0F6 SM0603_Resistor  R4 100 {Lib=R}
+ ( /5562F0F6 SM0603_Resistor  R4 15R {Lib=R}
   (    1 +1.8V )
   (    2 N-000004 )
  )
@@ -114,11 +114,11 @@
   (    1 +3.3V )
   (    2 GND )
  )
- ( /5565DB88 SM0603_Resistor  R3 100 {Lib=R}
+ ( /5565DB88 SM0603_Resistor  R3 15R {Lib=R}
   (    1 +1.8V )
   (    2 N-000017 )
  )
- ( /556793FC SM0603_Resistor  R1 100 {Lib=R}
+ ( /556793FC SM0603_Resistor  R1 15R {Lib=R}
   (    1 +1.8V )
   (    2 N-000018 )
  )
@@ -126,7 +126,7 @@
   (    1 N-000018 )
   (    2 GPIOA )
  )
- ( /557EE387 SM0603_Resistor  R2 330 {Lib=R}
+ ( /557EE387 SM0603_Resistor  R2 330R {Lib=R}
   (    1 +5V )
   (    2 N-000016 )
  )
