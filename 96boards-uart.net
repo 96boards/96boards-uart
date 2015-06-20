@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Fri 19 Jun 2015 10:21:03 BST
+# EESchema Netlist Version 1.1 created  Fri 19 Jun 2015 22:59:14 BST
 (
  ( /54EBBD47 $noname  SW1 RST {Lib=SW_PUSH}
   (    1 N-000028 )
@@ -107,7 +107,7 @@
   (    2 GND )
  )
  ( /5562F0F6 SM0603_Resistor  R4 15R {Lib=R}
-  (    1 +1.8V )
+  (    1 +3.3V )
   (    2 N-000004 )
  )
  ( /55674229 SM0603_Capa  C7 100nF {Lib=CSMALL}
@@ -115,11 +115,11 @@
   (    2 GND )
  )
  ( /5565DB88 SM0603_Resistor  R3 15R {Lib=R}
-  (    1 +1.8V )
+  (    1 +3.3V )
   (    2 N-000017 )
  )
  ( /556793FC SM0603_Resistor  R1 15R {Lib=R}
-  (    1 +1.8V )
+  (    1 +3.3V )
   (    2 N-000018 )
  )
  ( /557EE380 LED-0603  D1 USER {Lib=LED}
@@ -362,27 +362,29 @@ Net 14 "RTS0" "RTS0"
  U2 6
  J2 9
 Net 15 "CTS0" "CTS0"
- J2 3
  U2 2
+ J2 3
 Net 16 "" ""
  R2 2
  D2 1
 Net 17 "" ""
- D3 1
  R3 2
+ D3 1
 Net 18 "" ""
- R1 2
  D1 1
-Net 19 "+1.8V" "+1.8V"
- R3 1
+ R1 2
+Net 19 "+3.3V" "+3.3V"
  R4 1
- U2 3
+ C7 1
+ U1 3
+ R3 1
+ C1 1
  R1 1
- C2 1
- U1 2
+ U2 11
+ U2 10
 Net 20 "" ""
- U2 8
  R10 2
+ U2 8
 Net 21 "GPIOA" "GPIOA"
  J2 23
  D1 2
@@ -395,18 +397,16 @@ Net 23 "CBUS1" "CBUS1"
 Net 24 "" ""
  U2 9
  R9 2
-Net 25 "+3.3V" "+3.3V"
- U2 11
- C7 1
- U1 3
- U2 10
- C1 1
+Net 25 "+1.8V" "+1.8V"
+ C2 1
+ U1 2
+ U2 3
 Net 26 "GND" "GND"
  C4 2
  J2 2
- C7 2
  J2 1
  SW1 2
+ C7 2
  C5 2
  P1 5
  P1 6
