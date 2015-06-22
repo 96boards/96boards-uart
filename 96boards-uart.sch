@@ -39,7 +39,7 @@ encoding utf-8
 Sheet 1 1
 Title "96Boards Sonic Screwdriver (FTDI Version)"
 Date "20 jun 2015"
-Rev "0.4"
+Rev "1.0"
 Comp "Linaro, Ltd."
 Comment1 ""
 Comment2 ""

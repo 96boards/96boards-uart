@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew "(2015-06-18 BZR 5783)-product")
+(kicad_pcb (version 4) (host pcbnew 0.201506212247+5800~23~ubuntu15.04.1-product)
 
   (general
     (links 70)
@@ -15,7 +15,7 @@
   (page A4)
   (title_block
     (title "96 Boards Sonic Screwdriver (FTDI Version)")
-    (rev v0.4)
+    (rev v1.0)
     (company "Linaro, Ltd.")
   )
 
