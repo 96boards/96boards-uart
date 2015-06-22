@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (25-Oct-2014 BZR 4029)-stable date = Thu 18 Jun 2015 14:34:36 BST
+Cmp-Mod V01 Created by CvPcb (25-Oct-2014 BZR 4029)-stable date = Sun 21 Jun 2015 00:12:47 BST
 
 BeginCmp
 TimeStamp = /556231A4;
@@ -50,16 +50,16 @@ IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
-TimeStamp = /557EE380;
+TimeStamp = /556793F6;
 Reference = D1;
-ValeurCmp = USER;
+ValeurCmp = +5V;
 IdModule  = LED-0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /556793F6;
+TimeStamp = /557EE380;
 Reference = D2;
-ValeurCmp = +5V;
+ValeurCmp = USER;
 IdModule  = LED-0603;
 EndCmp
 
@@ -80,77 +80,98 @@ EndCmp
 BeginCmp
 TimeStamp = /5581A9C4;
 Reference = J1;
-ValeurCmp = CONN_3X2;
-IdModule  = PIN_ARRAY_3x2_2MM_SMT;
+ValeurCmp = CONN_4X2;
+IdModule  = PIN_ARRAY_4x2_2MM_SMT;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F0AFFF;
 Reference = J2;
-ValeurCmp = 96BOARDS_LS_EXPANSION;
+ValeurCmp = YXCON_P220-1220A0XMXXXX2;
 IdModule  = PIN_ARRAY_20x2_2MM_SMT;
 EndCmp
 
 BeginCmp
 TimeStamp = /5565AB07;
 Reference = P1;
-ValeurCmp = ST-USB-001G;
+ValeurCmp = ST-USB-001E;
 IdModule  = USB_MICRO_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /557FE8FF;
+Reference = Q1;
+ValeurCmp = S8050;
+IdModule  = SOT323;
 EndCmp
 
 BeginCmp
 TimeStamp = /556793FC;
 Reference = R1;
-ValeurCmp = 100;
+ValeurCmp = 15R;
 IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /557EE387;
 Reference = R2;
-ValeurCmp = 330;
+ValeurCmp = 330R;
 IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /5565DB88;
 Reference = R3;
-ValeurCmp = 100;
+ValeurCmp = 15R;
 IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /5562F0F6;
 Reference = R4;
-ValeurCmp = 100;
+ValeurCmp = 15R;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /557FD7B6;
+Reference = R5;
+ValeurCmp = 3k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /55802EBD;
+Reference = R6;
+ValeurCmp = 10k;
 IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /55671B7C;
 Reference = R7;
-ValeurCmp = 100;
+ValeurCmp = 100R;
 IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /55671B8B;
 Reference = R8;
-ValeurCmp = 100;
+ValeurCmp = 100R;
 IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /5565BAFA;
 Reference = R9;
-ValeurCmp = 22;
+ValeurCmp = 22R;
 IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /5565BB09;
 Reference = R10;
-ValeurCmp = 22;
+ValeurCmp = 22R;
 IdModule  = SM0603_Resistor;
 EndCmp
 

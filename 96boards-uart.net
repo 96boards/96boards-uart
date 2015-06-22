@@ -1,435 +1,615 @@
-# EESchema Netlist Version 1.1 created  Fri 19 Jun 2015 22:59:14 BST
-(
- ( /54EBBD47 $noname  SW1 RST {Lib=SW_PUSH}
-  (    1 N-000028 )
-  (    2 GND )
- )
- ( /54F0AFFF $noname  J2 YXCON_P220-1220A0XMXXXX2 {Lib=96BOARD_LS_EXPANSION}
-  (    1 GND )
-  (    2 GND )
-  (    3 CTS0 )
-  (    4 N-000027 )
-  (    5 TXD0 )
-  (    6 N-000028 )
-  (    7 RXD0 )
-  (    8 ? )
-  (    9 RTS0 )
-  (   10 ? )
-  (   11 TXD1 )
-  (   12 ? )
-  (   13 RXD1 )
-  (   14 ? )
-  (   15 ? )
-  (   16 ? )
-  (   17 ? )
-  (   18 ? )
-  (   19 ? )
-  (   20 ? )
-  (   21 ? )
-  (   22 ? )
-  (   23 GPIOA )
-  (   24 ? )
-  (   25 ? )
-  (   26 ? )
-  (   27 ? )
-  (   28 ? )
-  (   29 ? )
-  (   30 ? )
-  (   31 ? )
-  (   32 ? )
-  (   33 ? )
-  (   34 ? )
-  (   35 ? )
-  (   36 ? )
-  (   37 +5V )
-  (   38 ? )
-  (   39 GND )
-  (   40 GND )
- )
- ( /556230AA SOT23  U1 XC6206P182MR {Lib=LM317AEMP}
-  (    1 GND )
-  (    2 +1.8V )
-  (    3 +3.3V )
- )
- ( /556231A4 SM0603_Capa  C1 1uF {Lib=CSMALL}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /556232C3 SM0603_Capa  C2 1uF {Lib=CSMALL}
-  (    1 +1.8V )
-  (    2 GND )
- )
- ( /5565AB07 USB_MICRO_B  P1 ST-USB-001E {Lib=USB-MINI-B}
-  (    1 VBUS )
-  (    2 N-000006 )
-  (    3 N-000007 )
-  (    4 ? )
-  (    5 GND )
-  (    6 GND )
-  (    7 GND )
-  (    8 GND )
-  (    9 GND )
- )
- ( /5565BAFA SM0603_Resistor  R9 22R {Lib=R}
-  (    1 N-000006 )
-  (    2 N-000024 )
- )
- ( /5565BF0F SM0603_Capa  C6 39pF {Lib=CSMALL}
-  (    1 N-000006 )
-  (    2 GND )
- )
- ( /5565BEFD SM0603_Capa  C5 39pF {Lib=CSMALL}
-  (    1 N-000007 )
-  (    2 GND )
- )
- ( /5565BB09 SM0603_Resistor  R10 22R {Lib=R}
-  (    1 N-000007 )
-  (    2 N-000020 )
- )
- ( /5565C7D2 SM0603_Capa  C4 100nF {Lib=CSMALL}
-  (    1 VBUS )
-  (    2 GND )
- )
- ( /5565C7D8 SM0603_Capa  C3 1uF {Lib=CSMALL}
-  (    1 VBUS )
-  (    2 GND )
- )
- ( /55671B7C SM0603_Resistor  R7 100R {Lib=R}
-  (    1 CBUS2 )
-  (    2 N-000027 )
- )
- ( /55671B8B SM0603_Resistor  R8 100R {Lib=R}
-  (    1 CBUS3 )
-  (    2 N-000028 )
- )
- ( /55670DD9 SM0603_Resistor  R11 10k {Lib=R}
-  (    1 RTS0 )
-  (    2 GND )
- )
- ( /5562F0F6 SM0603_Resistor  R4 15R {Lib=R}
-  (    1 +3.3V )
-  (    2 N-000004 )
- )
- ( /55674229 SM0603_Capa  C7 100nF {Lib=CSMALL}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /5565DB88 SM0603_Resistor  R3 15R {Lib=R}
-  (    1 +3.3V )
-  (    2 N-000017 )
- )
- ( /556793FC SM0603_Resistor  R1 15R {Lib=R}
-  (    1 +3.3V )
-  (    2 N-000018 )
- )
- ( /557EE380 LED-0603  D1 USER {Lib=LED}
-  (    1 N-000018 )
-  (    2 GPIOA )
- )
- ( /557EE387 SM0603_Resistor  R2 330R {Lib=R}
-  (    1 +5V )
-  (    2 N-000016 )
- )
- ( /5565A864 SSOP16  U2 FT230XS-R {Lib=FT230XS}
-  (    1 RXD )
-  (    2 CTS0 )
-  (    3 +1.8V )
-  (    4 TXD )
-  (    5 GND )
-  (    6 RTS0 )
-  (    7 CBUS2 )
-  (    8 N-000020 )
-  (    9 N-000024 )
-  (   10 +3.3V )
-  (   11 +3.3V )
-  (   12 VBUS )
-  (   13 GND )
-  (   14 CBUS1 )
-  (   15 CBUS0 )
-  (   16 CBUS3 )
- )
- ( /5581A9C4 PIN_ARRAY_3x2_2mm_SMT  J1 CONN_3X2 {Lib=CONN_3X2}
-  (    1 RXD0 )
-  (    2 TXD0 )
-  (    3 RXD )
-  (    4 TXD )
-  (    5 RXD1 )
-  (    6 TXD1 )
- )
- ( /556793F6 LED-0603  D2 +5V {Lib=LED}
-  (    1 N-000016 )
-  (    2 GND )
- )
- ( /5562E6B2 LED-0603  D4 TX {Lib=LED}
-  (    1 N-000004 )
-  (    2 CBUS0 )
- )
- ( /5565DB8E LED-0603  D3 RX {Lib=LED}
-  (    1 N-000017 )
-  (    2 CBUS1 )
- )
-)
-*
-{ Allowed footprints by component:
-$component U1
- SOT*
-$endlist
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component C2
- SM*
- C?
- C1-1
-$endlist
-$component P1
- USB-Mini-B-Jack
-$endlist
-$component R9
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C6
- SM*
- C?
- C1-1
-$endlist
-$component C5
- SM*
- C?
- C1-1
-$endlist
-$component R10
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C4
- SM*
- C?
- C1-1
-$endlist
-$component C3
- SM*
- C?
- C1-1
-$endlist
-$component R7
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R8
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R11
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R4
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C7
- SM*
- C?
- C1-1
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component D1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component D2
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D4
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D3
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$endfootprintlist
-}
-{ Pin List by Nets
-Net 1 "VBUS" "VBUS"
- U2 12
- P1 1
- C3 1
- C4 1
-Net 2 "CBUS3" "CBUS3"
- U2 16
- R8 1
-Net 3 "CBUS2" "CBUS2"
- R7 1
- U2 7
-Net 4 "" ""
- R4 2
- D4 1
-Net 5 "CBUS0" "CBUS0"
- D4 2
- U2 15
-Net 6 "" ""
- C6 1
- R9 1
- P1 2
-Net 7 "" ""
- C5 1
- P1 3
- R10 1
-Net 8 "RXD" "RXD"
- J1 3
- U2 1
-Net 9 "TXD0" "TXD0"
- J2 5
- J1 2
-Net 10 "TXD1" "TXD1"
- J2 11
- J1 6
-Net 11 "RXD1" "RXD1"
- J1 5
- J2 13
-Net 12 "RXD0" "RXD0"
- J2 7
- J1 1
-Net 13 "TXD" "TXD"
- U2 4
- J1 4
-Net 14 "RTS0" "RTS0"
- R11 1
- U2 6
- J2 9
-Net 15 "CTS0" "CTS0"
- U2 2
- J2 3
-Net 16 "" ""
- R2 2
- D2 1
-Net 17 "" ""
- R3 2
- D3 1
-Net 18 "" ""
- D1 1
- R1 2
-Net 19 "+3.3V" "+3.3V"
- R4 1
- C7 1
- U1 3
- R3 1
- C1 1
- R1 1
- U2 11
- U2 10
-Net 20 "" ""
- R10 2
- U2 8
-Net 21 "GPIOA" "GPIOA"
- J2 23
- D1 2
-Net 22 "+5V" "+5V"
- R2 1
- J2 37
-Net 23 "CBUS1" "CBUS1"
- D3 2
- U2 14
-Net 24 "" ""
- U2 9
- R9 2
-Net 25 "+1.8V" "+1.8V"
- C2 1
- U1 2
- U2 3
-Net 26 "GND" "GND"
- C4 2
- J2 2
- J2 1
- SW1 2
- C7 2
- C5 2
- P1 5
- P1 6
- P1 7
- P1 9
- C6 2
- P1 8
- C3 2
- R11 2
- U2 5
- C2 2
- C1 2
- U1 1
- U2 13
- D2 2
- J2 39
- J2 40
-Net 27 "" ""
- R7 2
- J2 4
-Net 28 "" ""
- J2 6
- SW1 1
- R8 2
-}
-#End
+(export (version D)
+  (design
+    (source "/home/grant/hacking/hardware/96boards uart/96boards-uart.sch")
+    (date "Mon 22 Jun 2015 13:51:56 BST")
+    (tool "Eeschema 0.201506212247+5800~23~ubuntu15.04.1-product")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title "96Boards Sonic Screwdriver (FTDI Version)")
+        (company "Linaro, Ltd.")
+        (rev 0.4)
+        (date "20 jun 2015")
+        (source 96boards-uart.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref SW1)
+      (value RST)
+      (fields
+        (field (name OPL) 311020004))
+      (libsource (lib device) (part SW_PUSH))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 54EBBD47))
+    (comp (ref J2)
+      (value "YXCON P220-1220A0XMXXXX2")
+      (fields)
+      (libsource (lib 96boards-uart) (part 96BOARD_LS_EXPANSION))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 54F0AFFF))
+    (comp (ref U1)
+      (value XC6206P182MR)
+      (footprint SOT23)
+      (fields
+        (field (name OPL) 310030016))
+      (libsource (lib regul) (part LM317AEMP))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 556230AA))
+    (comp (ref C1)
+      (value 1uF)
+      (footprint SM0603_Capa)
+      (fields
+        (field (name OPL) 302010139))
+      (libsource (lib device) (part C_Small))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 556231A4))
+    (comp (ref C2)
+      (value 1uF)
+      (footprint SM0603_Capa)
+      (fields
+        (field (name OPL) 302010139))
+      (libsource (lib device) (part C_Small))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 556232C3))
+    (comp (ref P1)
+      (value ST-USB-001E)
+      (footprint USB_MICRO_B)
+      (datasheet http://www.seeedstudio.com/depot/images/opl/datasheet/3400150P1.pdf)
+      (fields
+        (field (name OPL) 320010015))
+      (libsource (lib 96boards-uart-cache) (part USB-MINI-B))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565AB07))
+    (comp (ref R9)
+      (value 22R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010289))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565BAFA))
+    (comp (ref C6)
+      (value 39pF)
+      (footprint SM0603_Capa)
+      (fields
+        (field (name OPL) 302010126))
+      (libsource (lib device) (part C_Small))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565BF0F))
+    (comp (ref C5)
+      (value 39pF)
+      (footprint SM0603_Capa)
+      (fields
+        (field (name OPL) 302010126))
+      (libsource (lib device) (part C_Small))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565BEFD))
+    (comp (ref R10)
+      (value 22R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010289))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565BB09))
+    (comp (ref C4)
+      (value 100nF)
+      (footprint SM0603_Capa)
+      (fields
+        (field (name OPL) 302010138))
+      (libsource (lib device) (part C_Small))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565C7D2))
+    (comp (ref C3)
+      (value 1uF)
+      (footprint SM0603_Capa)
+      (fields
+        (field (name OPL) 302010139))
+      (libsource (lib device) (part C_Small))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565C7D8))
+    (comp (ref R7)
+      (value 100R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010090))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55671B7C))
+    (comp (ref R8)
+      (value 100R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010090))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55671B8B))
+    (comp (ref R11)
+      (value 10k)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010299))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55670DD9))
+    (comp (ref R4)
+      (value 15R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010231))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5562F0F6))
+    (comp (ref C7)
+      (value 100nF)
+      (footprint SM0603_Capa)
+      (fields
+        (field (name OPL) 302010138))
+      (libsource (lib device) (part C_Small))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55674229))
+    (comp (ref R3)
+      (value 15R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010231))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565DB88))
+    (comp (ref R1)
+      (value 15R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010231))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 556793FC))
+    (comp (ref D2)
+      (value +5V)
+      (footprint LED-0603)
+      (fields
+        (field (name OPL) 304090042)
+        (field (name Colour) Red))
+      (libsource (lib 96boards-uart-rescue) (part LED-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 557EE380))
+    (comp (ref R2)
+      (value 330R)
+      (footprint SM0603_Resistor)
+      (fields
+        (field (name OPL) 301010300))
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 557EE387))
+    (comp (ref R5)
+      (value 3k)
+      (footprint SM0603_Resistor)
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 557FD7B6))
+    (comp (ref Q1)
+      (value S8050)
+      (footprint SOT323)
+      (libsource (lib transistors) (part BFR92))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 557FE8FF))
+    (comp (ref U2)
+      (value FT230XS-R)
+      (footprint SSOP16)
+      (fields
+        (field (name OPL) 310070030))
+      (libsource (lib 96boards-uart) (part FT230XS))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565A864))
+    (comp (ref R6)
+      (value 10k)
+      (footprint SM0603_Resistor)
+      (libsource (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55802EBD))
+    (comp (ref J1)
+      (value CONN_4X2)
+      (footprint PIN_ARRAY_3x2_2mm_SMT)
+      (libsource (lib 96boards-uart-cache) (part CONN_4X2))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5581A9C4))
+    (comp (ref D1)
+      (value USER)
+      (footprint LED-0603)
+      (fields
+        (field (name OPL) 304090045)
+        (field (name Colour) Blue))
+      (libsource (lib 96boards-uart-rescue) (part LED-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 556793F6))
+    (comp (ref D4)
+      (value TX)
+      (footprint LED-0603)
+      (fields
+        (field (name OPL) 304090044)
+        (field (name Colour) Yellow))
+      (libsource (lib 96boards-uart-rescue) (part LED-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5562E6B2))
+    (comp (ref D3)
+      (value RX)
+      (footprint LED-0603)
+      (fields
+        (field (name OPL) 304090044)
+        (field (name Colour) Yellow))
+      (libsource (lib 96boards-uart-rescue) (part LED-RESCUE-96boards-uart))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5565DB8E)))
+  (libparts
+    (libpart (lib 96boards-uart-rescue) (part LED-RESCUE-96boards-uart)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED-RESCUE-96boards-uart))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib 96boards-uart-rescue) (part R-RESCUE-96boards-uart)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R-RESCUE-96boards-uart))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part C_Small)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C_Small))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part SW_PUSH)
+      (description "Push Button")
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SW_PUSH))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib transistors) (part BFR92)
+      (description "BFR92, 15V Vce, 0.025A Ic, NPN 5GHz Wideband Transistor, SOT-323")
+      (docs http://www.nxp.com/documents/data_sheet/BFR92A_N.pdf)
+      (footprints
+        (fp SOT-323*))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) BFR92)
+        (field (name Footprint) SOT-323))
+      (pins
+        (pin (num 1) (name B) (type input))
+        (pin (num 2) (name E) (type passive))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib regul) (part LM317EMP)
+      (aliases
+        (alias LM317AEMP))
+      (description "LM317EMP, 1A 35V Adjustable Linear Regulator, SOT-223")
+      (docs http://www.national.com/ds/LM/LM117.pdf)
+      (footprints
+        (fp SOT*))
+      (fields
+        (field (name Reference) U)
+        (field (name Value) LM317EMP)
+        (field (name Footprint) SOT-223))
+      (pins
+        (pin (num 1) (name ADJ) (type input))
+        (pin (num 2) (name OUT) (type power_out))
+        (pin (num 3) (name IN) (type input))))
+    (libpart (lib 96boards-uart) (part 96BOARD_LS_EXPANSION)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) 96BOARD_LS_EXPANSION))
+      (pins
+        (pin (num 1) (name GND) (type passive))
+        (pin (num 2) (name GND) (type passive))
+        (pin (num 3) (name UART0_CTS) (type passive))
+        (pin (num 4) (name PWR_BTN_N) (type passive))
+        (pin (num 5) (name UART0_TXD) (type passive))
+        (pin (num 6) (name RST_BTN_N) (type passive))
+        (pin (num 7) (name UART0_RXD) (type passive))
+        (pin (num 8) (name SPI0_SCLK) (type passive))
+        (pin (num 9) (name UART0_RTS) (type passive))
+        (pin (num 10) (name SPI0_DIN) (type passive))
+        (pin (num 11) (name UART1_TXD) (type passive))
+        (pin (num 12) (name SPI0_CS) (type passive))
+        (pin (num 13) (name UART1_RXD) (type passive))
+        (pin (num 14) (name SPI0_DOUT) (type passive))
+        (pin (num 15) (name I2C0_SCL) (type passive))
+        (pin (num 16) (name PCM_FS) (type passive))
+        (pin (num 17) (name I2C0_SDA) (type passive))
+        (pin (num 18) (name PCM_CLK) (type passive))
+        (pin (num 19) (name I2C1_SCL) (type passive))
+        (pin (num 20) (name PCM_DO) (type passive))
+        (pin (num 21) (name I2C1_SDA) (type passive))
+        (pin (num 22) (name PCM_DI) (type passive))
+        (pin (num 23) (name GPIO-A/WKUP) (type passive))
+        (pin (num 24) (name GPIO-B) (type passive))
+        (pin (num 25) (name GPIO-C) (type passive))
+        (pin (num 26) (name GPIO-D) (type passive))
+        (pin (num 27) (name GPIO-E) (type passive))
+        (pin (num 28) (name GPIO-F) (type passive))
+        (pin (num 29) (name GPIO-G) (type passive))
+        (pin (num 30) (name GPIO-H) (type passive))
+        (pin (num 31) (name GPIO-I) (type passive))
+        (pin (num 32) (name GPIO-J) (type passive))
+        (pin (num 33) (name GPIO-K) (type passive))
+        (pin (num 34) (name GPIO-L) (type passive))
+        (pin (num 35) (name +1.8V) (type power_out))
+        (pin (num 36) (name SYS_DCIN) (type passive))
+        (pin (num 37) (name +5V) (type power_out))
+        (pin (num 38) (name SYS_DCIN) (type passive))
+        (pin (num 39) (name GND) (type passive))
+        (pin (num 40) (name GND) (type passive))))
+    (libpart (lib 96boards-uart) (part FT230XS)
+      (description "USB to serial interface")
+      (fields
+        (field (name Reference) U)
+        (field (name Value) FT230XS)
+        (field (name Footprint) SSOP-16))
+      (pins
+        (pin (num 1) (name TXD) (type output))
+        (pin (num 2) (name RTS) (type output))
+        (pin (num 3) (name VCCIO) (type power_in))
+        (pin (num 4) (name RXD) (type input))
+        (pin (num 5) (name GND) (type power_in))
+        (pin (num 6) (name CTS) (type input))
+        (pin (num 7) (name CBUS2) (type BiDi))
+        (pin (num 8) (name USBD+) (type BiDi))
+        (pin (num 9) (name USBD-) (type BiDi))
+        (pin (num 10) (name 3V3OUT) (type power_out))
+        (pin (num 11) (name RESET) (type input))
+        (pin (num 12) (name VCC) (type power_in))
+        (pin (num 13) (name GND) (type power_in))
+        (pin (num 14) (name CBUS1) (type output))
+        (pin (num 15) (name CBUS0) (type BiDi))
+        (pin (num 16) (name CBUS3) (type BiDi))))
+    (libpart (lib 96boards-uart-cache) (part CONN_4X2)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_4X2))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))
+        (pin (num 4) (name 4) (type passive))
+        (pin (num 5) (name 5) (type passive))
+        (pin (num 6) (name 6) (type passive))
+        (pin (num 7) (name 7) (type passive))
+        (pin (num 8) (name 8) (type passive))))
+    (libpart (lib 96boards-uart-cache) (part USB-MINI-B)
+      (footprints
+        (fp USB-Mini-B-Jack))
+      (fields
+        (field (name Reference) CON)
+        (field (name Value) USB-MINI-B))
+      (pins
+        (pin (num 1) (name VBUS) (type power_in))
+        (pin (num 2) (name D-) (type BiDi))
+        (pin (num 3) (name D+) (type BiDi))
+        (pin (num 4) (name ID) (type BiDi))
+        (pin (num 5) (name GND) (type power_in))
+        (pin (num 6) (name SHELL1) (type BiDi))
+        (pin (num 7) (name SHELL2) (type BiDi))
+        (pin (num 8) (name SHELL3) (type BiDi))
+        (pin (num 9) (name SHELL4) (type BiDi)))))
+  (libraries
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical 96boards-uart-rescue)
+      (uri "/home/grant/hacking/hardware/96boards uart/96boards-uart-rescue.lib"))
+    (library (logical transistors)
+      (uri /usr/share/kicad/library/transistors.lib))
+    (library (logical regul)
+      (uri /usr/share/kicad/library/regul.lib))
+    (library (logical 96boards-uart)
+      (uri "/home/grant/hacking/hardware/96boards uart/96boards-uart.lib"))
+    (library (logical 96boards-uart-cache)
+      (uri "/home/grant/hacking/hardware/96boards uart/96boards-uart-cache.lib")))
+  (nets
+    (net (code 1) (name "Net-(C6-Pad1)")
+      (node (ref C6) (pin 1))
+      (node (ref R9) (pin 1))
+      (node (ref P1) (pin 2)))
+    (net (code 2) (name "Net-(C5-Pad1)")
+      (node (ref C5) (pin 1))
+      (node (ref R10) (pin 1))
+      (node (ref P1) (pin 3)))
+    (net (code 3) (name "Net-(R9-Pad2)")
+      (node (ref R9) (pin 2))
+      (node (ref U2) (pin 9)))
+    (net (code 4) (name "Net-(R10-Pad2)")
+      (node (ref U2) (pin 8))
+      (node (ref R10) (pin 2)))
+    (net (code 5) (name "Net-(D2-Pad1)")
+      (node (ref R2) (pin 2))
+      (node (ref D2) (pin 1)))
+    (net (code 6) (name +5V)
+      (node (ref J2) (pin 37))
+      (node (ref R1) (pin 1))
+      (node (ref R2) (pin 1)))
+    (net (code 7) (name CTS0)
+      (node (ref J2) (pin 3))
+      (node (ref U2) (pin 2)))
+    (net (code 8) (name RTS0)
+      (node (ref J2) (pin 9))
+      (node (ref U2) (pin 6))
+      (node (ref R11) (pin 1)))
+    (net (code 9) (name RXD)
+      (node (ref U2) (pin 1))
+      (node (ref J1) (pin 3)))
+    (net (code 10) (name TXD0)
+      (node (ref J2) (pin 5))
+      (node (ref J1) (pin 2)))
+    (net (code 11) (name TXD1)
+      (node (ref J2) (pin 11))
+      (node (ref J1) (pin 6)))
+    (net (code 12) (name RXD1)
+      (node (ref J2) (pin 13))
+      (node (ref J1) (pin 5)))
+    (net (code 13) (name RXD0)
+      (node (ref J2) (pin 7))
+      (node (ref J1) (pin 1)))
+    (net (code 14) (name TXD)
+      (node (ref J1) (pin 4))
+      (node (ref U2) (pin 4)))
+    (net (code 15) (name VBUS)
+      (node (ref U2) (pin 12))
+      (node (ref C3) (pin 1))
+      (node (ref C4) (pin 1))
+      (node (ref P1) (pin 1)))
+    (net (code 16) (name CBUS3)
+      (node (ref R8) (pin 1))
+      (node (ref U2) (pin 16)))
+    (net (code 17) (name CBUS2)
+      (node (ref R7) (pin 1))
+      (node (ref U2) (pin 7)))
+    (net (code 18) (name "Net-(D4-Pad1)")
+      (node (ref D4) (pin 1))
+      (node (ref R4) (pin 2)))
+    (net (code 19) (name CBUS1)
+      (node (ref D3) (pin 2))
+      (node (ref U2) (pin 14)))
+    (net (code 20) (name "Net-(D3-Pad1)")
+      (node (ref R3) (pin 2))
+      (node (ref D3) (pin 1)))
+    (net (code 21) (name "Net-(D1-Pad1)")
+      (node (ref R1) (pin 2))
+      (node (ref D1) (pin 1)))
+    (net (code 22) (name +3.3V)
+      (node (ref R3) (pin 1))
+      (node (ref U2) (pin 11))
+      (node (ref U2) (pin 10))
+      (node (ref C1) (pin 1))
+      (node (ref U1) (pin 3))
+      (node (ref R4) (pin 1))
+      (node (ref C7) (pin 1)))
+    (net (code 23) (name +1.8V)
+      (node (ref U1) (pin 2))
+      (node (ref U2) (pin 3))
+      (node (ref C2) (pin 1))
+      (node (ref J1) (pin 7)))
+    (net (code 24) (name "Net-(D1-Pad2)")
+      (node (ref D1) (pin 2))
+      (node (ref Q1) (pin 3)))
+    (net (code 25) (name GND)
+      (node (ref C7) (pin 2))
+      (node (ref J2) (pin 1))
+      (node (ref J2) (pin 2))
+      (node (ref C5) (pin 2))
+      (node (ref D2) (pin 2))
+      (node (ref SW1) (pin 2))
+      (node (ref P1) (pin 5))
+      (node (ref J2) (pin 39))
+      (node (ref C4) (pin 2))
+      (node (ref P1) (pin 6))
+      (node (ref P1) (pin 7))
+      (node (ref P1) (pin 8))
+      (node (ref P1) (pin 9))
+      (node (ref C3) (pin 2))
+      (node (ref C6) (pin 2))
+      (node (ref R11) (pin 2))
+      (node (ref Q1) (pin 2))
+      (node (ref U1) (pin 1))
+      (node (ref U2) (pin 13))
+      (node (ref U2) (pin 5))
+      (node (ref C1) (pin 2))
+      (node (ref C2) (pin 2))
+      (node (ref R6) (pin 2))
+      (node (ref J1) (pin 8))
+      (node (ref J2) (pin 40)))
+    (net (code 26) (name "Net-(Q1-Pad1)")
+      (node (ref R6) (pin 1))
+      (node (ref Q1) (pin 1))
+      (node (ref R5) (pin 2)))
+    (net (code 27) (name GPIOA)
+      (node (ref R5) (pin 1))
+      (node (ref J2) (pin 23)))
+    (net (code 28) (name "Net-(J2-Pad6)")
+      (node (ref R8) (pin 2))
+      (node (ref SW1) (pin 1))
+      (node (ref J2) (pin 6)))
+    (net (code 29) (name "Net-(J2-Pad4)")
+      (node (ref J2) (pin 4))
+      (node (ref R7) (pin 2)))
+    (net (code 30) (name CBUS0)
+      (node (ref U2) (pin 15))
+      (node (ref D4) (pin 2)))
+    (net (code 31) (name "Net-(J2-Pad8)")
+      (node (ref J2) (pin 8)))
+    (net (code 32) (name "Net-(J2-Pad33)")
+      (node (ref J2) (pin 33)))
+    (net (code 33) (name "Net-(J2-Pad31)")
+      (node (ref J2) (pin 31)))
+    (net (code 34) (name "Net-(J2-Pad29)")
+      (node (ref J2) (pin 29)))
+    (net (code 35) (name "Net-(J2-Pad27)")
+      (node (ref J2) (pin 27)))
+    (net (code 36) (name "Net-(J2-Pad25)")
+      (node (ref J2) (pin 25)))
+    (net (code 37) (name "Net-(J2-Pad21)")
+      (node (ref J2) (pin 21)))
+    (net (code 38) (name "Net-(J2-Pad19)")
+      (node (ref J2) (pin 19)))
+    (net (code 39) (name "Net-(J2-Pad17)")
+      (node (ref J2) (pin 17)))
+    (net (code 40) (name "Net-(J2-Pad15)")
+      (node (ref J2) (pin 15)))
+    (net (code 41) (name "Net-(J2-Pad10)")
+      (node (ref J2) (pin 10)))
+    (net (code 42) (name "Net-(J2-Pad32)")
+      (node (ref J2) (pin 32)))
+    (net (code 43) (name "Net-(P1-Pad4)")
+      (node (ref P1) (pin 4)))
+    (net (code 44) (name "Net-(J2-Pad38)")
+      (node (ref J2) (pin 38)))
+    (net (code 45) (name "Net-(J2-Pad36)")
+      (node (ref J2) (pin 36)))
+    (net (code 46) (name "Net-(J2-Pad34)")
+      (node (ref J2) (pin 34)))
+    (net (code 47) (name "Net-(J2-Pad30)")
+      (node (ref J2) (pin 30)))
+    (net (code 48) (name "Net-(J2-Pad28)")
+      (node (ref J2) (pin 28)))
+    (net (code 49) (name "Net-(J2-Pad26)")
+      (node (ref J2) (pin 26)))
+    (net (code 50) (name "Net-(J2-Pad24)")
+      (node (ref J2) (pin 24)))
+    (net (code 51) (name "Net-(J2-Pad22)")
+      (node (ref J2) (pin 22)))
+    (net (code 52) (name "Net-(J2-Pad20)")
+      (node (ref J2) (pin 20)))
+    (net (code 53) (name "Net-(J2-Pad18)")
+      (node (ref J2) (pin 18)))
+    (net (code 54) (name "Net-(J2-Pad16)")
+      (node (ref J2) (pin 16)))
+    (net (code 55) (name "Net-(J2-Pad14)")
+      (node (ref J2) (pin 14)))
+    (net (code 56) (name "Net-(J2-Pad12)")
+      (node (ref J2) (pin 12)))
+    (net (code 57) (name "Net-(J2-Pad35)")
+      (node (ref J2) (pin 35)))))
