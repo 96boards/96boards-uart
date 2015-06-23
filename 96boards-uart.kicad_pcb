@@ -3,7 +3,7 @@
   (general
     (links 70)
     (no_connects 0)
-    (area 99.949999 99.949999 141.050001 114.050001)
+    (area 99.3902 96.2982 141.050001 117.77859)
     (thickness 1.6)
     (drawings 7)
     (tracks 397)
@@ -65,7 +65,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 100 100)
-    (visible_elements FFFFFF3F)
+    (visible_elements FFFFFB3F)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -1679,7 +1679,7 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 141 114) (xy 99.873 114.127) (xy 99.873 100.127) (xy 141 100)
+        (xy 141 114) (xy 99.973 114.027) (xy 99.973 100.027) (xy 141 100)
       )
     )
     (filled_polygon
