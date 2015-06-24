@@ -1,4 +1,4 @@
-update=Mon 22 Jun 2015 13:48:59 BST
+update=Thu 25 Jun 2015 00:33:59 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -46,8 +46,6 @@ LibName16=valves
 LibName17=96boards-uart
 LibName18=kicad-gcl
 LibName19=OSHW-logo
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -94,3 +92,5 @@ LibName29=contrib
 LibName30=valves
 LibName31=mosfet
 LibName32=96boards-uart
+[general]
+version=1
