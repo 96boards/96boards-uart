@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/grant/hacking/hardware/96boards uart/96boards-uart.sch")
-    (date "Thu 25 Jun 2015 11:06:32 BST")
+    (date "Thu 25 Jun 2015 11:51:29 BST")
     (tool "Eeschema 0.201506222247+5806~23~ubuntu15.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -273,6 +273,63 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5565DB8E)))
   (libparts
+    (libpart (lib device) (part C_Small)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C_Small))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part Led_Small)
+      (description Led)
+      (footprints
+        (fp CP*)
+        (fp SM*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) Led_Small))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part SW_PUSH)
+      (description "Push Button")
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SW_PUSH))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib transistors) (part BFR92)
+      (description "BFR92, 15V Vce, 0.025A Ic, NPN 5GHz Wideband Transistor, SOT-323")
+      (docs http://www.nxp.com/documents/data_sheet/BFR92A_N.pdf)
+      (footprints
+        (fp SOT-323*))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) BFR92)
+        (field (name Footprint) SOT-323))
+      (pins
+        (pin (num 1) (name B) (type input))
+        (pin (num 2) (name E) (type passive))
+        (pin (num 3) (name C) (type passive))))
     (libpart (lib regul) (part LM317EMP)
       (aliases
         (alias LM317AEMP))
@@ -384,75 +441,18 @@
         (pin (num 6) (name SHELL1) (type BiDi))
         (pin (num 7) (name SHELL2) (type BiDi))
         (pin (num 8) (name SHELL3) (type BiDi))
-        (pin (num 9) (name SHELL4) (type BiDi))))
-    (libpart (lib device) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib transistors) (part BFR92)
-      (description "BFR92, 15V Vce, 0.025A Ic, NPN 5GHz Wideband Transistor, SOT-323")
-      (docs http://www.nxp.com/documents/data_sheet/BFR92A_N.pdf)
-      (footprints
-        (fp SOT-323*))
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) BFR92)
-        (field (name Footprint) SOT-323))
-      (pins
-        (pin (num 1) (name B) (type input))
-        (pin (num 2) (name E) (type passive))
-        (pin (num 3) (name C) (type passive))))
-    (libpart (lib device) (part C_Small)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C_Small))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part SW_PUSH)
-      (description "Push Button")
-      (fields
-        (field (name Reference) SW)
-        (field (name Value) SW_PUSH))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part Led_Small)
-      (description Led)
-      (footprints
-        (fp CP*)
-        (fp SM*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) Led_Small))
-      (pins
-        (pin (num 1) (name K) (type passive))
-        (pin (num 2) (name A) (type passive)))))
+        (pin (num 9) (name SHELL4) (type BiDi)))))
   (libraries
-    (library (logical 96boards-uart-cache)
-      (uri "/home/grant/hacking/hardware/96boards uart/96boards-uart-cache.lib"))
-    (library (logical 96boards-uart)
-      (uri "/home/grant/hacking/hardware/96boards uart/96boards-uart.lib"))
-    (library (logical transistors)
-      (uri /usr/share/kicad/library/transistors.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
+    (library (logical transistors)
+      (uri /usr/share/kicad/library/transistors.lib))
     (library (logical regul)
-      (uri /usr/share/kicad/library/regul.lib)))
+      (uri /usr/share/kicad/library/regul.lib))
+    (library (logical 96boards-uart)
+      (uri "/home/grant/hacking/hardware/96boards uart/96boards-uart.lib"))
+    (library (logical 96boards-uart-cache)
+      (uri "/home/grant/hacking/hardware/96boards uart/96boards-uart-cache.lib")))
   (nets
     (net (code 1) (name "Net-(C6-Pad1)")
       (node (ref C6) (pin 1))
