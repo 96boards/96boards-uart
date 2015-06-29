@@ -1,11 +1,11 @@
 all: 96boards-uart.zip 96boards-uart-seeed.csv
 
-%-Edge_Cuts.gko: %-Edge_Cuts.gbr
-	cp $*-Edge_Cuts.gbr $*-Edge_Cuts.gko
+%-Edge_Cuts.gko: %-Edge_Cuts.gm1
+	cp $< $@
 
-%.zip: %-B_Cu.gbl %-B_Mask.gbs %-B_SilkS.gbo %-F_Cu.gtl %-F_Mask.gts %-F_SilkS.gto %-Edge_Cuts.gko %.drl %-NPTH.drl %-top.pos %-bottom.pos
+%.zip: %-B_Cu.gbl %-B_Mask.gbs %-B_SilkS.gbo %-B_Paste.gbp %-F_Cu.gtl %-F_Mask.gts %-F_SilkS.gto %-F_Paste.gtp %-Edge_Cuts.gko %.drl %-NPTH.drl %-top.pos %-bottom.pos %-ft230x.xml %.csv
 	zip $@ $^
 
 %-seeed.csv: %.csv
-	awk 'BEGIN { FS=","; OFS=","; } { print $$4,$$2,$$3; }' $< > $@
+	awk 'BEGIN { FS=","; OFS=","; } { print $$5,1,$$1; }' $< > $@
 
