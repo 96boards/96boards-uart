@@ -1,0 +1,18 @@
+Control utility for the 96board Console adapter
+
+This program will control the power button and reset button signals when using a
+96Boards USB console adaptor.
+
+This is a very simple utility, but unfortunately it isn't very convenient
+because it will disconnect the kernel driver from the UART adaptor when
+twiddling the pins, which means the console connection gets lost. The kernel
+driver needs to be reconnected by echoing the device address into the ftdi_sio
+driver's 'bind' file in sysfs.
+
+This program requires read/write access to the raw USB device in /dev/bus/usb/.
+For convenience, a udev rule can be used to make the device group writable when
+it is enumerated. Copy the file udev-rules/71-ftdi_sio.rules into
+/etc/udev/rules.d
+
+TODO:
+- Let CBUS pins be manipulated without disconnecting the kernel driver
