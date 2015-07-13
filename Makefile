@@ -9,3 +9,6 @@ all: 96boards-uart.zip 96boards-uart-seeed.csv
 %-seeed.csv: %.csv
 	awk 'BEGIN { FS=","; OFS=","; } { print $$5,1,$$1; }' $< > $@
 
+# This rule will only work with v1.2 of ftdi_eeprom or higher
+flash:
+	ftdi_eeprom --flash-eeprom ftdi_eeprom/ftdi_eeprom.conf
