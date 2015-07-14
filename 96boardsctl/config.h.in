@@ -1,0 +1,2 @@
+#define __96boardsctl_VERSION_MAJOR @96boardsctl_VERSION_MAJOR@
+#define __96boardsctl_VERSION_MINOR @96boardsctl_VERSION_MINOR@

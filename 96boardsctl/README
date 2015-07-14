@@ -17,14 +17,17 @@ it is enumerated. Copy the file udev-rules/71-ftdi_sio.rules into
 TODO:
 - Let CBUS pins be manipulated without disconnecting the kernel driver
 
-Prerequisites: libftdi-0.20 and libusb-0.1
-There are much newer versions of those libraries, but v0.20 and v0.1 are
-the versions packaged in Ubuntu. This program /should/ build against
+Prerequisites: cmake libftdi-0.20 and libusb-0.1
+
+There are much newer versions of libftdi and libusb, but v0.20 and v0.1
+are the versions packaged in Ubuntu. This program /should/ build against
 newer versions, but I've not been able to test it yet. (In fact, I'd
 really like to be using the latest libftdi because it adds proper FT230X
 eeprom support and would let me reconnect the kernel driver
 automatically, but that causes pain because v1.2 isn't packaged yet).
 
 Building:
-$ apt-get install libftdi-dev libusb-dev
+$ apt-get install libftdi-dev libusb-dev cmake
+$ cmake .
 $ make
+$ make install

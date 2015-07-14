@@ -7,6 +7,8 @@
 #include <string.h>
 #include <unistd.h>
 
+#include "config.h"
+
 static const char *progname;
 static struct ftdi_context ftdi;
 static char cbus_shadow = 0;
