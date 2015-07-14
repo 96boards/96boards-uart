@@ -15,6 +15,7 @@ static char cbus_shadow = 0;
 
 static int power_pin = 2;
 static int reset_pin = 3;
+static unsigned long pulse_ms = 1000;
 
 static const char *optstring = "-hlLop:s:";
 static const struct option long_options[] = {
@@ -93,7 +94,6 @@ int pulse_cbus(int pin, int usecs)
 int main(int argc, char *argv[])
 {
 	char *cmd = NULL, *serialnum = NULL;
-	unsigned long pulse_ms = 100;
 	int rc;
 	char c;
 
