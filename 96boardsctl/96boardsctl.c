@@ -117,8 +117,8 @@ int main(int argc, char *argv[])
 			pulse_ms = 1000;
 			break;
 		case 'o':
-			power_pin = 0;
-			reset_pin = 1;
+			power_pin = 1;
+			reset_pin = 0;
 			break;
 		case 'p':
 			pulse_ms = strtoul(optarg, NULL, 10);
