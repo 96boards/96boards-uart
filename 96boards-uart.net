@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/grant/hacking/hardware/96boards-uart/96boards-uart.sch)
-    (date "Tue 21 Jul 2015 01:14:39 BST")
+    (date "Wed 22 Jul 2015 01:47:07 BST")
     (tool "Eeschema no-vcs-found-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -36,7 +36,7 @@
       (tstamp 54F0AFFF))
     (comp (ref U1)
       (value REG_1.8V)
-      (footprint Housings_SOT-23_SOT-143_TSOT-6:SOT-23)
+      (footprint kicad-gcl:SOT-23_Seeed)
       (fields
         (field (name "Seeed SKU") 310030016)
         (field (name Mfr) Torex)
@@ -123,7 +123,9 @@
       (value 220R)
       (footprint kicad-gcl:R_0603_Seeed)
       (fields
-        (field (name "Seeed SKU") 301010163))
+        (field (name "Seeed SKU") 301010163)
+        (field (name Mfr) YAGEO)
+        (field (name "Mfr Part #") RC0603JR-07220RL))
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 55671B7C))
@@ -147,7 +149,9 @@
       (value 220R)
       (footprint kicad-gcl:R_0603_Seeed)
       (fields
-        (field (name "Seeed SKU") 301010163))
+        (field (name "Seeed SKU") 301010163)
+        (field (name Mfr) YAGEO)
+        (field (name "Mfr Part #") RC0603JR-07220RL))
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 5562F0F6))
@@ -163,21 +167,25 @@
       (value 220R)
       (footprint kicad-gcl:R_0603_Seeed)
       (fields
-        (field (name "Seeed SKU") 301010163))
+        (field (name "Seeed SKU") 301010163)
+        (field (name Mfr) YAGEO)
+        (field (name "Mfr Part #") RC0603JR-07220RL))
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 5565DB88))
     (comp (ref R1)
-      (value 220R)
+      (value 390R)
       (footprint kicad-gcl:R_0603_Seeed)
       (fields
-        (field (name "Seeed SKU") 301010163))
+        (field (name "Seeed SKU") 301010297)
+        (field (name Mfr) YAGEO)
+        (field (name "Mfr Part #") RC0603JR-07390RL))
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 556793FC))
     (comp (ref D2)
       (value +5V)
-      (footprint LEDs:LED-0603)
+      (footprint kicad-gcl:LED-0603)
       (fields
         (field (name "Seeed SKU") 304090042)
         (field (name Mfr) Everlight)
@@ -187,10 +195,12 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 557EE380))
     (comp (ref R2)
-      (value 330R)
+      (value 620R)
       (footprint kicad-gcl:R_0603_Seeed)
       (fields
-        (field (name "Seeed SKU") 301010300))
+        (field (name "Seeed SKU") 301010210)
+        (field (name Mfr) YAGEO)
+        (field (name "Mfr Part #") RC0603JR-07620RL))
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 557EE387))
@@ -204,7 +214,7 @@
       (tstamp 557FD7B6))
     (comp (ref Q1)
       (value S8050)
-      (footprint SMD_Packages:SOT-323)
+      (footprint kicad-gcl:SOT-23_Seeed)
       (fields
         (field (name "Seeed SKU") 305010017)
         (field (name Mfr) CJ)
@@ -241,7 +251,7 @@
       (tstamp 5581A9C4))
     (comp (ref D1)
       (value USER)
-      (footprint LEDs:LED-0603)
+      (footprint kicad-gcl:LED-0603)
       (fields
         (field (name "Seeed SKU") 304090045)
         (field (name Mfr) Everlight)
@@ -252,7 +262,7 @@
       (tstamp 556793F6))
     (comp (ref D4)
       (value TX)
-      (footprint LEDs:LED-0603)
+      (footprint kicad-gcl:LED-0603)
       (fields
         (field (name "Seeed SKU") 304090044)
         (field (name Mfr) Everlight)
@@ -263,7 +273,7 @@
       (tstamp 5562E6B2))
     (comp (ref D3)
       (value RX)
-      (footprint LEDs:LED-0603)
+      (footprint kicad-gcl:LED-0603)
       (fields
         (field (name "Seeed SKU") 304090044)
         (field (name Mfr) Everlight)
@@ -279,27 +289,6 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 558C0FA1)))
   (libparts
-    (libpart (lib transistors) (part BFR92)
-      (description "BFR92, 15V Vce, 0.025A Ic, NPN 5GHz Wideband Transistor, SOT-323")
-      (docs http://www.nxp.com/documents/data_sheet/BFR92A_N.pdf)
-      (footprints
-        (fp SOT-323*))
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) BFR92)
-        (field (name Footprint) SOT-323))
-      (pins
-        (pin (num 1) (name B) (type input))
-        (pin (num 2) (name E) (type passive))
-        (pin (num 3) (name C) (type passive))))
-    (libpart (lib device) (part SW_PUSH)
-      (description "Push Button")
-      (fields
-        (field (name Reference) SW)
-        (field (name Value) SW_PUSH))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
     (libpart (lib device) (part C_Small)
       (description "Unpolarized capacitor")
       (footprints
@@ -314,6 +303,21 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib regul) (part LM317EMP)
+      (aliases
+        (alias LM317AEMP))
+      (description "LM317EMP, 1A 35V Adjustable Linear Regulator, SOT-223")
+      (docs http://www.national.com/ds/LM/LM117.pdf)
+      (footprints
+        (fp SOT*))
+      (fields
+        (field (name Reference) U)
+        (field (name Value) LM317EMP)
+        (field (name Footprint) SOT-223))
+      (pins
+        (pin (num 1) (name ADJ) (type input))
+        (pin (num 2) (name OUT) (type power_out))
+        (pin (num 3) (name IN) (type input))))
     (libpart (lib conn) (part CONN_02X03)
       (footprints
         (fp Pin_Header_Straight_2X03)
@@ -330,77 +334,6 @@
         (pin (num 4) (name P4) (type passive))
         (pin (num 5) (name P5) (type passive))
         (pin (num 6) (name P6) (type passive))))
-    (libpart (lib device) (part Led_Small)
-      (description Led)
-      (footprints
-        (fp CP*)
-        (fp SM*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) Led_Small))
-      (pins
-        (pin (num 1) (name K) (type passive))
-        (pin (num 2) (name A) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib 96boards-uart) (part FT230XS)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) FT230XS)
-        (field (name Footprint) SSOP-16))
-      (pins
-        (pin (num 1) (name TXD) (type output))
-        (pin (num 2) (name RTS) (type output))
-        (pin (num 3) (name VCCIO) (type power_in))
-        (pin (num 4) (name RXD) (type input))
-        (pin (num 5) (name GND) (type power_in))
-        (pin (num 6) (name CTS) (type input))
-        (pin (num 7) (name CBUS2) (type BiDi))
-        (pin (num 8) (name USBD+) (type BiDi))
-        (pin (num 9) (name USBD-) (type BiDi))
-        (pin (num 10) (name 3V3OUT) (type power_out))
-        (pin (num 11) (name RESET) (type input))
-        (pin (num 12) (name VCC) (type power_in))
-        (pin (num 13) (name GND) (type power_in))
-        (pin (num 14) (name CBUS1) (type output))
-        (pin (num 15) (name CBUS0) (type BiDi))
-        (pin (num 16) (name CBUS3) (type BiDi))))
-    (libpart (lib conn) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib regul) (part LM317EMP)
-      (aliases
-        (alias LM317AEMP))
-      (description "LM317EMP, 1A 35V Adjustable Linear Regulator, SOT-223")
-      (docs http://www.national.com/ds/LM/LM117.pdf)
-      (footprints
-        (fp SOT*))
-      (fields
-        (field (name Reference) U)
-        (field (name Value) LM317EMP)
-        (field (name Footprint) SOT-223))
-      (pins
-        (pin (num 1) (name ADJ) (type input))
-        (pin (num 2) (name OUT) (type power_out))
-        (pin (num 3) (name IN) (type input))))
     (libpart (lib 96boards-uart-cache) (part USB-MINI-B)
       (footprints
         (fp USB-Mini-B-Jack))
@@ -417,6 +350,53 @@
         (pin (num 7) (name SHELL2) (type passive))
         (pin (num 8) (name SHELL3) (type passive))
         (pin (num 9) (name SHELL4) (type passive))))
+    (libpart (lib device) (part Led_Small)
+      (description Led)
+      (footprints
+        (fp CP*)
+        (fp SM*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) Led_Small))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib conn) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
+    (libpart (lib transistors) (part BFR92)
+      (description "BFR92, 15V Vce, 0.025A Ic, NPN 5GHz Wideband Transistor, SOT-323")
+      (docs http://www.nxp.com/documents/data_sheet/BFR92A_N.pdf)
+      (footprints
+        (fp SOT-323*))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) BFR92)
+        (field (name Footprint) SOT-323))
+      (pins
+        (pin (num 1) (name B) (type input))
+        (pin (num 2) (name E) (type passive))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib 96boards-uart) (part 96BOARD_LS_EXPANSION)
       (fields
         (field (name Reference) P)
@@ -461,20 +441,50 @@
         (pin (num 37) (name +5V) (type power_out))
         (pin (num 38) (name SYS_DCIN) (type passive))
         (pin (num 39) (name GND) (type passive))
-        (pin (num 40) (name GND) (type passive)))))
+        (pin (num 40) (name GND) (type passive))))
+    (libpart (lib 96boards-uart) (part FT230XS)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) FT230XS)
+        (field (name Footprint) SSOP-16))
+      (pins
+        (pin (num 1) (name TXD) (type output))
+        (pin (num 2) (name RTS) (type output))
+        (pin (num 3) (name VCCIO) (type power_in))
+        (pin (num 4) (name RXD) (type input))
+        (pin (num 5) (name GND) (type power_in))
+        (pin (num 6) (name CTS) (type input))
+        (pin (num 7) (name CBUS2) (type BiDi))
+        (pin (num 8) (name USBD+) (type BiDi))
+        (pin (num 9) (name USBD-) (type BiDi))
+        (pin (num 10) (name 3V3OUT) (type power_out))
+        (pin (num 11) (name RESET) (type input))
+        (pin (num 12) (name VCC) (type power_in))
+        (pin (num 13) (name GND) (type power_in))
+        (pin (num 14) (name CBUS1) (type output))
+        (pin (num 15) (name CBUS0) (type BiDi))
+        (pin (num 16) (name CBUS3) (type BiDi))))
+    (libpart (lib device) (part SW_PUSH)
+      (description "Push Button")
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SW_PUSH))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
+    (library (logical 96boards-uart)
+      (uri /home/grant/hacking/hardware/96boards-uart/96boards-uart.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical transistors)
       (uri /usr/share/kicad/library/transistors.lib))
-    (library (logical regul)
-      (uri /usr/share/kicad/library/regul.lib))
-    (library (logical 96boards-uart)
-      (uri /home/grant/hacking/hardware/96boards-uart/96boards-uart.lib))
     (library (logical 96boards-uart-cache)
-      (uri /home/grant/hacking/hardware/96boards-uart/96boards-uart-cache.lib)))
+      (uri /home/grant/hacking/hardware/96boards-uart/96boards-uart-cache.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical regul)
+      (uri /usr/share/kicad/library/regul.lib)))
   (nets
     (net (code 1) (name "Net-(C5-Pad1)")
       (node (ref C5) (pin 1))
