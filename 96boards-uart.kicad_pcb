@@ -662,6 +662,11 @@
       (net 20 "Net-(J2-Pad6)"))
     (pad 2 smd rect (at -3.975 2.25 180) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
       (net 7 GND))
+    (model Buttons_Switches_ThroughHole.3dshapes/SW_PUSH-12mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 2 2 2))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module kicad-gcl:Pin_Header_SMD_2x03_Pitch2mm (layer F.Cu) (tedit 558C17AD) (tstamp 558C0E36)
