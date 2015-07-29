@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:mosfet
 LIBS:96boards-uart
 LIBS:96boards-uart-cache
 EELAYER 25 0
