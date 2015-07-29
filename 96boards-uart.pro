@@ -1,4 +1,4 @@
-update=Thu 25 Jun 2015 10:39:42 BST
+update=Wed 29 Jul 2015 21:02:25 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -91,5 +91,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=mosfet
-LibName31=96boards-uart
+LibName30=96boards-uart
