@@ -93,7 +93,8 @@ int pulse_cbus(int pin, int usecs)
 
 int main(int argc, char *argv[])
 {
-	char *cmd = NULL, *serialnum = NULL;
+	char *cmd[3], *serialnum = NULL;
+	int count = 0;
 	int rc;
 	char c;
 
@@ -104,7 +105,11 @@ int main(int argc, char *argv[])
 	while ((c = getopt_long(argc, argv, optstring, long_options, NULL)) >= 0) {
 		switch (c) {
 		case 1:
-			cmd = optarg;
+			if (count >= 3) {
+				usage();
+				exit(EXIT_FAILURE);
+			}
+			cmd[count++] = optarg;
 			break;
 		case 'h':
 			usage();
@@ -132,7 +137,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	if (!cmd) {
+	if (!count) {
 		usage();
 		exit(EXIT_FAILURE);
 	}
@@ -150,14 +155,30 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
-	if (strcmp(cmd, "reset") == 0) {
+	if (count == 1 && strcmp(cmd[0], "reset") == 0) {
 		printf("Pressing reset\n");
 		pulse_cbus(reset_pin, pulse_ms * 1000);
-	} else if (strcmp(cmd, "power") == 0) {
+	} else if (count == 1 && strcmp(cmd[0], "power") == 0) {
 		printf("Pressing power\n");
 		pulse_cbus(power_pin, pulse_ms * 1000);
+	} else if (count == 3 && strcmp(cmd[0], "gpio") == 0) {
+		unsigned int pin = strtoul(cmd[1], NULL, 0);
+		if (pin > 3) {
+			fprintf(stderr, "Unknown pin '%s'\n", cmd[1]);
+			usage();
+		}
+		if (strcmp(cmd[2], "high") == 0) {
+			printf("Setting CBUS%i high\n", pin);
+			set_cbus(pin, 1, 1);
+		} else if (strcmp(cmd[2], "low") == 0) {
+			printf("Setting CBUS%i low\n", pin);
+			set_cbus(pin, 1, 0);
+		} else {
+			printf("Setting CBUS%i as input\n", pin);
+			set_cbus(pin, 0, 0);
+		}
 	} else {
-		fprintf(stderr, "Unknown command '%s'\n", cmd);
+		fprintf(stderr, "Unknown command '%s'\n", cmd[0]);
 		usage();
 		exit(EXIT_FAILURE);
 	}
