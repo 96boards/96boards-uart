@@ -119,7 +119,7 @@ int main(int argc, char *argv[])
 			list_devices();
 			break;
 		case 'L':
-			pulse_ms = 1000;
+			pulse_ms = 5000;
 			break;
 		case 'o':
 			power_pin = 1;
