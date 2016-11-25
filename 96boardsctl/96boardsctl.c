@@ -1,7 +1,8 @@
 #include <err.h>
 #include <ftdi.h>
+#include <libusb.h>
 #include <getopt.h>
-#include <usb.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,12 +14,14 @@ static const char *progname;
 static struct ftdi_context ftdi;
 static char cbus_shadow = 0;
 
+static bool attach;
 static int power_pin = 2;
 static int reset_pin = 3;
 static unsigned long pulse_ms = 1000;
 
-static const char *optstring = "-hlLop:s:";
+static const char *optstring = "-ahlLop:s:";
 static const struct option long_options[] = {
+	{ "attach", 0, NULL, 'a' },
 	{ "serial", 1, NULL, 's' },
 	{ "help", 0, NULL, 'h' },
 	{ "list", 0, NULL, 'l' },
@@ -33,6 +36,7 @@ static void usage(void)
 		"Usage: %s [OPTION]... command\n"
 		"Control the power button and reset lines with a 96boards USB console adaptor\n"
 		"\n"
+		"  -a, --attach			Re-attach ftdi_sio driver afteruse\n"
 		"  -h, --help			Display this help and exit\n"
 		"  -o, --old			Using old v0.3 prototype board\n"
 		"  -l, --list			List available devices and exit\n"
@@ -45,7 +49,7 @@ static void usage(void)
 		"  reset			Pulse the reset button signal\n"
 		"\n"
 		"This program causes the kernel's ftdi_sio driver to disconnect from the UART device\n"
-		"It can be reconnected by echoing the device name into /sys/bus/usb/drivers/ftdi_sio/bind\n"
+		"It can be reconnected by using the --attach option.\n"
 		"", progname);
 }
 
@@ -110,6 +114,9 @@ int main(int argc, char *argv[])
 				exit(EXIT_FAILURE);
 			}
 			cmd[count++] = optarg;
+			break;
+		case 'a':
+			attach = true;
 			break;
 		case 'h':
 			usage();
@@ -184,6 +191,18 @@ int main(int argc, char *argv[])
 	}
 
 	ftdi_disable_bitbang(&ftdi);
+
+	if (attach) {
+		rc = libusb_release_interface(ftdi.usb_dev, ftdi.interface);
+		if (rc == 0)
+			rc = libusb_attach_kernel_driver(ftdi.usb_dev,
+							 ftdi.interface);
+		if (rc != 0)
+			fprintf(stderr,
+				"Failed to reattach kernel driver: %d (%s)\n",
+				rc, libusb_strerror(rc));
+	}
+
 	ftdi_usb_close(&ftdi);
 	ftdi_deinit(&ftdi);
 	exit(EXIT_SUCCESS);
