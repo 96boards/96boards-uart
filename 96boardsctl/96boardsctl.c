@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 	char *cmd[3], *serialnum = NULL;
 	int count = 0;
 	int rc;
-	char c;
+	signed char c;
 
 	progname = argv[0];
 
