@@ -18,8 +18,13 @@ include_directories(${LIBFTDI_INCLUDE_DIRS})
 link_directories(${LIBFTDI_LIBRARY_DIRS})
 add_definitions(${LIBFTDI_CFLAGS_OTHER})
 
+pkg_check_modules(LIBUSB REQUIRED libusb-1.0)
+include_directories(${LIBUSB_INCLUDE_DIRS})
+link_directories(${LIBUSB_LIBRARY_DIRS})
+add_definitions(${LIBUSB_CFLAGS_OTHER})
+
 add_executable(96boardsctl 96boardsctl.c)
-target_link_libraries(96boardsctl ${LIBFTDI_LIBRARIES})
+target_link_libraries(96boardsctl ${LIBFTDI_LIBRARIES} ${LIBUSB_LIBRARIES})
 
 install (TARGETS 96boardsctl DESTINATION bin)
 install (FILES udev-rules/71-ftdi_sio.rules DESTINATION etc/udev/rules.d)
